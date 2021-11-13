@@ -1,9 +1,8 @@
-# DevOps Engineer - DumbWays.id
-DumbWays merupakan bootcamp DevOps gratis dan disalurkan kerja!
+# PreDevOps Engineer - DumbWays.id
 
 ## Minggu ke 1
-- Setup ubuntu server di VMWare & Install aplikasi nginx
-- Setup ubuntu server di AWS & Deploy aplikasi frontend
+- Introduction to DevOps
+- Topology and Basic Network
 - [Baca lebih lanjut](week-1/README.md)
 
 ## Minggu ke 2
