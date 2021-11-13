@@ -1,14 +1,26 @@
 # Week 1
-Jelaskan maksud dari week 1 ini, apa yang akan Anda buat serta berikan gambar arsitekturnya.
+Membuat Kultur DevOps dalam Sebuah Perusahaan
+##Requirements
+- Buatlah flow DevOps dari awal hingga selesai berdasarkan materi yang telah di ajarkan
+- Jelaskan secara rinci tools dan fungsi yang akan digunakan dalam perusahaan tersebut
+- Tools yang dijelaskan boleh berbeda dari materi yang diajarkan
 
-# Kebutuhan
-Jelaskan kebutuhan yang harus ada sebelum memulai, seperti:
-- Server : -
-- Security group : -
-- Aplikasi frontend : -
-- Aplikasi backend : -
-- Dll
+# Jawaban
+PT.XYZ merupakan perusahaan yang bergerak dibidang jasa distribusi gas dari PGN untuk disalurkan kerumah-rumah didaerah jabodetabek. PT tersebut membutuhkan web yang digunakan untuk pendaftaran pelanggan baru dan mengecek apakah wilayah pelanggan baru tersebut masuk dalam area yang dicover oleh PT.XYZ
 
-# Penyelesaian
-- [Setup ubuntu server di VMWare & Install aplikasi nginx](setup-ubuntu-server-di-vmware-dan-install-aplikasi-nginx.md)
-- [Setup ubuntu server di AWS & Deploy aplikasi frontend](setup-ubuntu-server-di-aws-dan-deploy-aplikasi-frontend.md)
+Kultur DevOps.
+1. Planing
+   Membuat rencana apa saja yang dibutuhkan dan fitur-fitur apa saja yang akan ada dalam web tersebut
+   Menentukan server apa yang akan digunakan dengan spesifikasi:
+      1. diakses semua orang ( Menggunakan server yang bersifat public karena diakses semua orang, sistem operasi Linux 64Bit, Menggunakan containertools guna menginstall bahasa          yang digunakan dan aplikasi yang digunakan untuk membuat fitur berjalan, 
+      2. database untuk menyimpan data wilayah yang ter-cover (public cloud tools berupa Amazon Web Service (AWS)) dan menyimpan data pengguna baru 
+2. Coding
+   Membuat fitur-fitur tersebut dengan bahasa pemrograman (Java,C,python : Tools yang digunakan Visualcode, dsb)
+3. Build
+   Menjadikan fitur-fitur tersebut dalam satu kesatuan aplikasi dalam web
+4. Test
+   Mengetest atau ujicoba keseluruhan fitur dalam aplikasi (Tools yang digunakan adalah Github untuk merangkum apa saja kejadian dalam pengetesan)
+5. Release
+   Setelah semua fitur telah ditest dan berjalan dengan sesuai keinginan, maka direalease ke publik
+6. Operate dan Monitoring
+   Pengoperasian aplikasi dan monitoring guna menjaga aplikasi tetap berjalan dan uptodate dengan menggunakan tools Jenkins
