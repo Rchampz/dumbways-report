@@ -23,5 +23,7 @@ Kultur DevOps.
    Mengetest atau ujicoba keseluruhan fitur dalam aplikasi (Tools yang digunakan adalah Github untuk mendokumentasikan apa saja kejadian dalam pengetesan)
 5. Release
    Setelah semua fitur telah ditest dan berjalan dengan sesuai keinginan, maka direalease ke publik
-6. Operate dan Monitoring
+6. Deploy
+   Mengunggah atau deploying aplikasi ke server AWS yang telah direncanakan diawal
+7. Operate dan Monitoring
    Pengoperasian aplikasi dan monitoring guna menjaga aplikasi tetap berjalan dan uptodate dengan menggunakan tools Jenkins
