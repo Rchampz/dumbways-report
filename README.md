@@ -1,6 +1,6 @@
-# PreDevOps Engineer - DumbWays.id
+# DevOps Engineer - DumbWays.id
 
-## Minggu ke 1
+## Minggu ke 1 PreDevOps
 - Introduction to DevOps
 - Topology and Basic Network
 - [Baca lebih lanjut](week-1/README.md)
