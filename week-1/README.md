@@ -15,6 +15,7 @@ Kultur DevOps.
    Menentukan server apa yang akan digunakan dengan spesifikasi:
       1. diakses semua orang ( Menggunakan server yang bersifat public karena diakses semua orang, sistem operasi Linux 64Bit, Menggunakan containertools guna menginstall bahasa            yang digunakan dan aplikasi yang digunakan untuk membuat fitur berjalan
       2. database untuk menyimpan data wilayah yang ter-cover (public cloud tools berupa Amazon Web Service (AWS)) dan menyimpan data pengguna baru 
+      3. IP Static agar servernya tetap tiap kita mengaksesnya
 2. Coding
    Membuat fitur-fitur tersebut dengan bahasa pemrograman (Java,C,python : Tools yang digunakan Visualcode, dsb)
 3. Build
