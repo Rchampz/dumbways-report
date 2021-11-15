@@ -10,6 +10,7 @@ Membuat Kultur DevOps dalam Sebuah Perusahaan
 PT.XYZ merupakan perusahaan yang bergerak dibidang jasa distribusi gas dari PGN untuk disalurkan kerumah-rumah didaerah jabodetabek. PT tersebut membutuhkan web yang digunakan untuk pendaftaran pelanggan baru dan mengecek apakah wilayah pelanggan baru tersebut masuk dalam area yang dicover oleh PT.XYZ
 
 Kultur DevOps.
+
 ![devops](https://github.com/Rchampz/dumbways-report/blob/main/week-1/assets/devops.jpg)
 
 1. Planing
