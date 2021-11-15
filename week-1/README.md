@@ -13,11 +13,12 @@ Kultur DevOps.
 ![devops](https://github.com/Rchampz/dumbways-report/blob/main/week-1/assets/devops.jpg)
 
 1. Planing
-   Membuat rencana apa saja yang dibutuhkan dan fitur-fitur apa saja yang akan ada dalam      web tersebut
+   Membuat rencana apa saja yang dibutuhkan dan fitur-fitur apa saja yang akan ada dalam web tersebut.
    Menentukan server apa yang akan digunakan dengan spesifikasi:
-      1. diakses semua orang ( Menggunakan server yang bersifat public karena diakses semua orang, sistem operasi Linux 64Bit, Menggunakan containertools guna menginstall bahasa            yang digunakan dan aplikasi yang digunakan untuk membuat fitur berjalan
-      2. database untuk menyimpan data wilayah yang ter-cover (public cloud tools berupa Amazon Web Service (AWS)) dan menyimpan data pengguna baru 
-      3. IP Static agar servernya tetap tiap kita mengaksesnya
+      1. diakses semua orang atau server public ber IP statis misalnya AWS dan alasan kenapa memakai IP static adalah agar tiap mengakses server tidak berubah.
+      2. sistem operasi Linux 64Bit alasan menggunakan linux adalah opensource dan lebih bebas virus
+      3. Menggunakan containertools guna menginstall bahasa yang digunakan dan aplikasi yang digunakan untuk membuat fitur berjalan
+      4. Database untuk menyimpan data wilayah yang ter-cover (public cloud tools berupa Amazon Web Service (AWS)) dan menyimpan data pengguna baru) 
 2. Coding
    Membuat fitur-fitur tersebut dengan bahasa pemrograman (Java,C,python : Tools yang digunakan Visualcode, dsb)
 3. Build
