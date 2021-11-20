@@ -15,15 +15,25 @@ Instalasi, Konfigurasi, Service management serta Membuat Dokumentasinya
 
 ## Proses Instalasi Linux
 1. Sebelumnya disini saya menggunakan VMWare guna menginstall linucx dengan kernel ubuntu server secara virtualmachine dan menggunakan ubuntu server 18.04.6 yang bisa didownload diwebsite resmi ubuntu dalam link berikut. https://releases.ubuntu.com/18.04/ Setalah berhasil download, kemudian di install dalam VMWare dan diarahkan ke file berekstensi .iso yang tealh didownload
+
 ![step1](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/1.jpg)
+
 2. Kemudian tekan Next dan selanjutnya akan setting username. Disini saya menggunakan username:dumbways
+
 ![step2](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/2.jpg)
+
 3. Langkah selanjutnya memberi nama virtualmachine. Disini saya memberi nama belajar install ubuntu
+
 ![step3](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/3.jpg)
+
 4. Kemudian atur preferensi jumlah storage atau penyimpanan yang akan digunakan.
+
 ![step4](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/4.jpg)
+
 5. Setelah selesai tekan next, dan pilih customize. Dalam menu costumize dapat diatur jumlah ram yang akan digunakan untuk sistem yang sedang di install.
+
 ![step5](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/5.jpg)
+
 6. Setalah itu beralih ke Network Adapter yang awalnya NAT diubah ke Bridge, Kenapa bridge? Dikarenakan kita menggunakan virtualbox agar koneksi yang kita gunakan sama dengan OS yang dasar kita pakai.
 ![step6](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/6.jpg)
 7. Setelah itu next, dan klik finish maka proses instalasi akan berjalan
