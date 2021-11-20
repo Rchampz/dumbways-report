@@ -199,9 +199,21 @@ git clone <url repository> <folder tujuan>
 <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitclone2.jpg" />
 </p>
 
-4. `git add`. 
+4. `git add`. Untuk menandai file yang akan direvisi atau diunggah kedalam repository.
+```
+git add <namafile>
+git add *
+fit add .
+```
 
----
+5. `git commit` Untuk mengunggah file ke repository git dalam komputer lokal
+```
+git commit -m <pesan>
+```
+`-m` digunakan untuk menambahkan pesan kedalam file yang diunggah ke repositori tanpa mengganggu isi dari file sekaligus sebagai identifikasi apa saja revisi yang telah dilakukan
+
+
+
 ## Study Case
 Dalam sebuah project untuk membangun website dibutuhkan sebuah index.html yang memuat kebutuhan untuk web tersebut. Langkah-langkah dari proses development-staging-production adalah sebagai berikut
 
