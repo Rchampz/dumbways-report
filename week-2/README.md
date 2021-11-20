@@ -160,6 +160,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 <p align="center">
 <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitignore1.jpg" />
 </p>
+
 - menambahkan list file dalam gitignore dengan `nano .gitignore` 
 <p align="center">
 <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitignore2.jpg" />
