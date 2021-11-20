@@ -72,6 +72,7 @@ Pilih bahasa yang dimengerti, disini saya memilih english
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/14.jpg" />
 </p>
 
+---
 
 ## Dokumentasi Git
 
