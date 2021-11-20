@@ -1,14 +1,12 @@
 # Week 2
-Jelaskan maksud dari week 2 ini, apa yang akan Anda buat serta berikan gambar arsitekturnya.
+Instalasi, Konfigurasi, Service management serta Membuat Dokumentasinya
 
 # Kebutuhan
-Jelaskan kebutuhan yang harus ada sebelum memulai, seperti:
-- Server : -
-- Security group : -
-- Aplikasi frontend : -
-- Aplikasi backend : -
-- Dll
+- Buatlah dokumentasi proses instalasi linux dan bash script
+- Buatlah dokumentasi git yang berisikan perintah-perintah yang digunakan untuk versioning
+- Buatlah studycase proses update dari branch development kemudian ke staging dan setelah itu ke production
+- Buatlah proses/tahapan dalam pembuatan CI/CD menggunakan Github Actions
 
 # Penyelesaian
-- [Setup git & Ssh key](setup-git-dan-ssh-key.md)
+- [Dokumentasi proses instalasi linux](setup-git-dan-ssh-key.md)
 - [Setup database & Deploy aplikasi backend](setup-database-dan-deploy-aplikasi-backend.md)
