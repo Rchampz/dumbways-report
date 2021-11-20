@@ -89,7 +89,8 @@ Pilih bahasa yang dimengerti, disini saya memilih english
    - membuat folder untuk penyimpanan repository dan kemudian perintah *git init* yang akan menginisialisasi git
    - dan akan muncul file baru ber ekstensi .git yang merupakan server lokal kita sebelum masuk ke Git
 ### Perintah perintah Git
-1. `git status`. melihat status git yang berada dikomputer
+1. `git status`. melihat status git yang berada dikomputer.
+
 hasil `git status`
 ```
 champz@ubuntu:~/Documents/Dumbways$ git status
