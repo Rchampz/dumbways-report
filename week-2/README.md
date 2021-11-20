@@ -74,3 +74,15 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 
 
 ## Dokumentasi Git
+1. Menginstall Git dengan perintah *sudo apt install git* dan jika sudah terinstal untuk mengecek versi dari git yang digunakan menggunakan perintah *git --version*
+2. Mengkonfigurasi Git dengan menggunakan perintah *git -config* ada beberapa yang harus di konfigurasikan
+   - *git config --global user.name 'rifaicham'**** yang merupakan perintah memasukkan username Git kita 
+   - *git config --global user.email 'rifaichamzah@gmail.com'**** yang merupakan perintah memasukkan email Git kita 
+   - dan *git config --list*** yang merupakan perintah untuk mengecek apakah sudah berhasil terkonfigurasi
+3. Membuat SSH key untuk menghubungkan ke Git kita dengan perintah *ssh-keygen* dan memilih dimana akan menyimpan ssh tersebut. disini nama ssh-dw dan passphrase bisa dikosongkan.
+4. kemudian ketik perintah *cat ~/.ssh/id_rsa.pub* untuk mendapatkan ssh
+5. Copy isi tersebut dan buka github.com/setting/keys, klik New SSH Key dan paste kemudian save
+6. kemudian cek apakah sudah terhubung dengan perintah *ssh -T git@github.com* dan akan memunculkan respon jika berhasil
+7. Kemudian membuat repository
+   - membuat folder untuk penyimpanan repository
+   - kemudian perintah *git init* yang akan meg inisialisasi git
