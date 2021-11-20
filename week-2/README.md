@@ -55,4 +55,6 @@ Pilih bahasa yang dimengerti, disini saya memilih english
   ![step13](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/13.jpg)
 
 14. Kemudian jalankan sudo apt update untuk mengupdate sistem dan sudo apt upgrade untuk mengupgrade sistem. Dan berlanjut sistem akan cek apakah ada update dan jika ada update kita dapat memilih menginstall update tersebut atau tidak dengan perintah(y/n) y unyuk menerima update dan n untuk membatalkannya.
-  ![step14](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/14.jpg)
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/14.jpg" />
+</p>
