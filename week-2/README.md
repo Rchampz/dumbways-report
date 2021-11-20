@@ -141,7 +141,7 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 Ada 3 tahap dalam file git.
 
 <p align="center">
-<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/taha.jpg" />
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/tahap%20git.png" />
 </p>
 	
 1. Tahap Modified
@@ -153,6 +153,7 @@ Ada 3 tahap dalam file git.
    
    
 ### Perintah perintah Git
+
 1. `git status`. melihat status git yang berada dikomputer.
 
 hasil `git status`
