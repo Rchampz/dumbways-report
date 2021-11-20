@@ -8,5 +8,10 @@ Instalasi, Konfigurasi, Service management serta Membuat Dokumentasinya
 - Buatlah proses/tahapan dalam pembuatan CI/CD menggunakan Github Actions
 
 # Penyelesaian
-- [Dokumentasi proses instalasi linux](setup-git-dan-ssh-key.md)
+- [Dokumentasi proses instalasi linux](https://github.com/rifaicham/dumbways-report/edit/main/week-2/README.md#Proses-Instalasi-Linux) 
 - [Setup database & Deploy aplikasi backend](setup-database-dan-deploy-aplikasi-backend.md)
+- 
+
+
+## Proses Instalasi Linux
+1. 
