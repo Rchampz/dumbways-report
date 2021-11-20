@@ -78,6 +78,9 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 
 ### Instal Git dan konfigurasi
 1. Menginstall Git dengan perintah *sudo apt install git* dan jika sudah terinstal untuk mengecek versi dari git yang digunakan menggunakan perintah *git --version*
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/1.jpg" />
+</p>
 2. Mengkonfigurasi Git dengan menggunakan perintah *git -config* ada beberapa yang harus di konfigurasikan
    - `git config --global user.name 'username'` yang merupakan perintah memasukkan username Git kita 
    - `git config --global user.email 'user@email.com'` yang merupakan perintah memasukkan email Git kita 
