@@ -79,8 +79,8 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 ### Instal Git dan konfigurasi
 1. Menginstall Git dengan perintah *sudo apt install git* dan jika sudah terinstal untuk mengecek versi dari git yang digunakan menggunakan perintah *git --version*
 2. Mengkonfigurasi Git dengan menggunakan perintah *git -config* ada beberapa yang harus di konfigurasikan
-   - `git config --global user.name 'rifaicham'` yang merupakan perintah memasukkan username Git kita 
-   - `git config --global user.email 'rifaichamzah@gmail.com'` yang merupakan perintah memasukkan email Git kita 
+   - `git config --global user.name 'username'` yang merupakan perintah memasukkan username Git kita 
+   - `git config --global user.email 'user@email.com'` yang merupakan perintah memasukkan email Git kita 
    - dan `git config --list` yang merupakan perintah untuk mengecek apakah sudah berhasil terkonfigurasi
 3. Membuat SSH key untuk menghubungkan ke Git kita dengan perintah *ssh-keygen* dan memilih dimana akan menyimpan ssh tersebut. disini nama ssh-dw dan passphrase bisa dikosongkan.
 4. kemudian ketik perintah `cat ~/.ssh/id_rsa.pub` untuk mendapatkan ssh
@@ -119,19 +119,25 @@ remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), 951 bytes | 475.00 KiB/s, done
 ```
+
 3. `git pull`. memperbarui repository dalam komputer
 ```
 git pull origin <nama branch>
 ```
 hasil `git pull`
 ```
-champz@ubuntu:~/Documents/Dumbways$ git pull https://github.com/rifaicham/Rchampz.git 
-remote: Enumerating objects: 15, done.
-remote: Counting objects: 100% (15/15), done.
-remote: Compressing objects: 100% (10/10), done.
-remote: Total 15 (delta 4), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (15/15), 3.47 KiB | 444.00 KiB/s, done.
+cchampz@ubuntu:~/Documents/Dumbways$ git pull https://github.com/rifaicham/Rchampz.git
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 639 bytes | 639.00 KiB/s, done.
 From https://github.com/rifaicham/Rchampz
  * branch            HEAD       -> FETCH_HEAD
+Updating be56b07..44ab3ce
+Fast-forward
+ README.md | 12 +-----------
+ 1 file changed, 1 insertion(+), 11 deletions(-)
+
 ```
 4. 
