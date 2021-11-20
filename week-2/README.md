@@ -110,11 +110,11 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 7. Kemudian membuat repository
    - membuat folder untuk penyimpanan repository dan kemudian perintah *git init* yang akan menginisialisasi git
 	<p align="center">
-	<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/7.1.jpg" />
+	<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/7.2.jpg" />
 	</p>
    - dan akan muncul file baru ber ekstensi .git yang merupakan server lokal kita sebelum masuk ke Git
 	<p align="center">
-	<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/7.2.jpg" />
+	<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/7.1.jpg" />
 	</p>
 
 
