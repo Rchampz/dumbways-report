@@ -118,7 +118,7 @@ remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), 951 bytes | 475.00 KiB/s, done
 ```
-2. `git pull`. memperbarui repository
+3. `git pull`. memperbarui repository dalam komputer
 ```
 git pull origin <nama branch>
 ```
