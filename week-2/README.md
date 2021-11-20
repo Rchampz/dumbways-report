@@ -122,4 +122,15 @@ Unpacking objects: 100% (3/3), 951 bytes | 475.00 KiB/s, done
 ```
 git pull origin <nama branch>
 ```
-contoh `git pull`
+hasil `git pull`
+```
+champz@ubuntu:~/Documents/Dumbways$ git pull https://github.com/rifaicham/Rchampz.git 
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 15 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (15/15), 3.47 KiB | 444.00 KiB/s, done.
+From https://github.com/rifaicham/Rchampz
+ * branch            HEAD       -> FETCH_HEAD
+```
+4. 
