@@ -74,6 +74,8 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 
 
 ## Dokumentasi Git
+
+### Instal Git dan konfigurasi
 1. Menginstall Git dengan perintah *sudo apt install git* dan jika sudah terinstal untuk mengecek versi dari git yang digunakan menggunakan perintah *git --version*
 2. Mengkonfigurasi Git dengan menggunakan perintah *git -config* ada beberapa yang harus di konfigurasikan
    - `git config --global user.name 'rifaicham'` yang merupakan perintah memasukkan username Git kita 
@@ -86,7 +88,8 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 7. Kemudian membuat repository
    - membuat folder untuk penyimpanan repository dan kemudian perintah *git init* yang akan menginisialisasi git
    - dan akan muncul file baru ber ekstensi .git yang merupakan server lokal kita sebelum masuk ke Git
-8. `git clone`. Unduh repository ke dalam komputer menggunakan perintah
+### Perintah perintah Git
+1. `git clone`. megunduh repository ke dalam komputer
 ```
 git clone <url repository> <folder tujuan>
 ```
