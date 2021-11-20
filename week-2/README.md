@@ -221,7 +221,7 @@ git commit -m <pesan>
 <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitcommit.jpg" />
 </p>
 
-6. `git branch` 
+6. `git branch` digunakan untuk membuat versi dari sebuah repository
 ```
 git branch -a
 git branch -M main
@@ -256,7 +256,17 @@ git remote add origin git@github.com:rifaicham/dumbways-git.git
 git pull origin <nama branch>
 ```
 
+10. `git checkout` digunakan untuk pindah dari branch satu ke yang lain 
+
+
 ---
 ## Study Case
-Dalam sebuah project untuk membangun website dibutuhkan sebuah index.html yang memuat kebutuhan untuk web tersebut. Langkah-langkah dari proses development-staging-production adalah sebagai berikut
+Dalam sebuah project untuk membangun website dibutuhkan sebuah tools yang digunakan untuk pembayaran dalam web tersebut. Langkah-langkah dari proses *development-staging-production* adalah sebagai berikut.
+1. Development
+Tahap pembuatan dan pengetesan tools oleh programmer
+2. Staging
+Tahap untuk mengetes fungsi tools oleh QA (Quality assurance). Setelah lulus uji oleh QA tools baru dapat dilanjutkan ke tahap production
+3. Production
+Tahap tools yang siap digunakan oleh konsumen untuk melakukan pembayaran. Dan jika semisal dalam penambahan tools pembayaran terjadi error maka bisa dikembalikan kedalam versi sebelumnya. 
+
 
