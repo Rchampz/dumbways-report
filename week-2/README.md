@@ -77,7 +77,7 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 ## Dokumentasi Git
 
 ### Instal Git dan konfigurasi
-1. Menginstall Git dengan perintah *sudo apt install git* dan jika sudah terinstal untuk mengecek versi dari git yang digunakan menggunakan perintah *git --version*
+1. Menginstall Git dengan perintah `sudo apt install git` dan jika sudah terinstal untuk mengecek versi dari git yang digunakan menggunakan perintah `git --version`
 <p align="center">
 <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/1.jpg" />
 </p>
@@ -85,9 +85,24 @@ Pilih bahasa yang dimengerti, disini saya memilih english
    - `git config --global user.name 'username'` yang merupakan perintah memasukkan username Git kita 
    - `git config --global user.email 'user@email.com'` yang merupakan perintah memasukkan email Git kita 
    - dan `git config --list` yang merupakan perintah untuk mengecek apakah sudah berhasil terkonfigurasi
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/2.jpg" />
+</p>
 3. Membuat SSH key untuk menghubungkan ke Git kita dengan perintah *ssh-keygen* dan memilih dimana akan menyimpan ssh tersebut. disini nama ssh-dw dan passphrase bisa dikosongkan.
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/3.jpg" />
+</p>
 4. kemudian ketik perintah `cat ~/.ssh/id_rsa.pub` untuk mendapatkan ssh
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/4.jpg" />
+</p>
 5. Copy isi tersebut dan buka github.com/setting/keys, klik New SSH Key dan paste kemudian save
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/5.1.jpg" />
+</p>
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/5.2.jpg" />
+</p>
 6. kemudian cek apakah sudah terhubung dengan perintah `ssh -T git@github.com` dan akan memunculkan respon jika berhasil
 7. Kemudian membuat repository
    - membuat folder untuk penyimpanan repository dan kemudian perintah *git init* yang akan menginisialisasi git
