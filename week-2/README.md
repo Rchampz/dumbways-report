@@ -47,7 +47,7 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 <p align="center">
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/8.jpg" />
 </p>
-9. Kemudian pilih done sampai kemenu set up IP. Dalam setup IP karena kita menggunakan Netwok Bridge maka akan mengikuti komputer dasar yang dijalankan. Bisa secara manual setting IP dengan edit IP4 atau menggunakan DHCP agar Ipnya otomatis.
+9. Kemudian pilih done sampai ke menu set up IP. Dalam setup IP karena kita menggunakan Netwok Bridge maka akan mengikuti komputer dasar yang dijalankan. Bisa secara manual setting IP dengan edit IP4 atau menggunakan DHCP agar Ipnya otomatis.
 <p align="center">
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/9.jpg" />
 </p>
@@ -67,7 +67,7 @@ Pilih bahasa yang dimengerti, disini saya memilih english
   <p align="center">
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/13.jpg" />
 </p>
-14. Kemudian jalankan sudo apt update untuk mengupdate sistem dan sudo apt upgrade untuk mengupgrade sistem. Dan berlanjut sistem akan cek apakah ada update dan jika ada update kita dapat memilih menginstall update tersebut atau tidak dengan perintah(y/n) y unyuk menerima update dan n untuk membatalkannya.
+14. Kemudian jalankan `sudo apt update` untuk mengupdate sistem dan `sudo apt upgrade` untuk mengupgrade sistem. Dan berlanjut sistem akan cek apakah ada update dan jika ada update kita dapat memilih menginstall update tersebut atau tidak dengan perintah(y/n) y unyuk menerima update dan n untuk membatalkannya.
 <p align="center">
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/14.jpg" />
 </p>
@@ -76,14 +76,17 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 ## Dokumentasi Git
 1. Menginstall Git dengan perintah *sudo apt install git* dan jika sudah terinstal untuk mengecek versi dari git yang digunakan menggunakan perintah *git --version*
 2. Mengkonfigurasi Git dengan menggunakan perintah *git -config* ada beberapa yang harus di konfigurasikan
-   - *git config --global user.name 'rifaicham'**** yang merupakan perintah memasukkan username Git kita 
-   - *git config --global user.email 'rifaichamzah@gmail.com'**** yang merupakan perintah memasukkan email Git kita 
-   - dan *git config --list*** yang merupakan perintah untuk mengecek apakah sudah berhasil terkonfigurasi
+   - `git config --global user.name 'rifaicham'` yang merupakan perintah memasukkan username Git kita 
+   - `git config --global user.email 'rifaichamzah@gmail.com'` yang merupakan perintah memasukkan email Git kita 
+   - dan `git config --list` yang merupakan perintah untuk mengecek apakah sudah berhasil terkonfigurasi
 3. Membuat SSH key untuk menghubungkan ke Git kita dengan perintah *ssh-keygen* dan memilih dimana akan menyimpan ssh tersebut. disini nama ssh-dw dan passphrase bisa dikosongkan.
-4. kemudian ketik perintah *cat ~/.ssh/id_rsa.pub* untuk mendapatkan ssh
+4. kemudian ketik perintah `cat ~/.ssh/id_rsa.pub` untuk mendapatkan ssh
 5. Copy isi tersebut dan buka github.com/setting/keys, klik New SSH Key dan paste kemudian save
-6. kemudian cek apakah sudah terhubung dengan perintah *ssh -T git@github.com* dan akan memunculkan respon jika berhasil
+6. kemudian cek apakah sudah terhubung dengan perintah `ssh -T git@github.com` dan akan memunculkan respon jika berhasil
 7. Kemudian membuat repository
    - membuat folder untuk penyimpanan repository dan kemudian perintah *git init* yang        akan menginisialisasi git
    - dan akan muncul file baru ber ekstensi .git yang merupakan server lokal kita            sebelum masuk ke Git
-8. 'gitclone' Perintah untuk clone 
+8. `git clone`. Unduh repository ke dalam komputer menggunakan perintah
+
+```
+git clone <url repository> <folder tujuan>
