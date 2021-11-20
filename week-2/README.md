@@ -205,13 +205,21 @@ git add <namafile>
 git add *
 fit add .
 ```
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitadd1.jpg" />
+</p>
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitadd2.jpg" />
+</p>
 
 5. `git commit` Untuk mengunggah file ke repository git dalam komputer lokal
 ```
 git commit -m <pesan>
 ```
 `-m` digunakan untuk menambahkan pesan kedalam file yang diunggah ke repositori tanpa mengganggu isi dari file sekaligus sebagai identifikasi apa saja revisi yang telah dilakukan
-
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitcommit.jpg" />
+</p>
 
 6. `git branch` 
 ```
@@ -223,15 +231,26 @@ git branch <namabranchbaru>
 `git branch`+`-M`+`main` untuk mengubah nama branch utama menjadi main karena untuk github branch utama diset otomatis bernama main
 `git branch`+`<namabranchbaru>` untuk membuat branch baru
 
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitbranch.jpg" />
+</p>
+
 7. `git remote` Digunakan untuk membuat repository online
 ```
 git remote add <namagit><alamat git>
 git remote add origin git@github.com:rifaicham/dumbways-git.git
 ```
+
 8. `git push` Digunakan untuk mengunggah repository dari komputer ke repository online
  ```
  git push -u origin main
  ```
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitpush.jpg" />
+</p>
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitpush1.jpg" />
+</p>
+
 9. `git pull` memperbarui repository yang telah diunduh ke dalam komputer menggunakan perintah git pull.
 ```
 git pull origin <nama branch>
