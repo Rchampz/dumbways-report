@@ -171,6 +171,10 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 2. `.gitignore`. Mengabaikan nama file yang berada dalam list gitignore untuk di update ke repository
+```
+touch .gitignore
+nano .gitignore
+```
 - Membuat gitignore dengan perintah `touch .gitignore` fungsi `.` sebelum `gitignore` adalah hiden file gitignore
 <p align="center">
 <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitignore1.jpg" />
@@ -196,6 +200,7 @@ git clone <url repository> <folder tujuan>
 </p>
 
 4. `git add`. 
+
 ---
 ## Study Case
 Dalam sebuah project untuk membangun website dibutuhkan sebuah index.html yang memuat kebutuhan untuk web tersebut. Langkah-langkah dari proses development-staging-production adalah sebagai berikut
