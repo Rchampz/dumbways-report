@@ -137,7 +137,21 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 	</p>
 
 
+### *Step* atau Tahapan dalam git
+Ada 3 tahap dalam file git.
 
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/taha.jpg" />
+</p>
+	
+1. Tahap Modified
+   Tahap dimana perubahan dilakukan dalam file namun belum ditandai dan disimpan dalam git.
+2. Tahap Staged
+   Tahap menandai revisi yang sudah dilakukan tetapi belum disimpan dalam git. (biasanya menggunakan perintah `git add`)
+3. Tahap Commited
+   Tahap rivisi sudah disimpan dalam git. (menggunakan perintah `git commit`)
+   
+   
 ### Perintah perintah Git
 1. `git status`. melihat status git yang berada dikomputer.
 
@@ -180,6 +194,7 @@ git clone <url repository> <folder tujuan>
 <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitclone2.jpg" />
 </p>
 
+4. `git add`. 
 ---
 ## Study Case
 Dalam sebuah project untuk membangun website dibutuhkan sebuah index.html yang memuat kebutuhan untuk web tersebut. Langkah-langkah dari proses development-staging-production adalah sebagai berikut
