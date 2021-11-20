@@ -119,8 +119,11 @@ remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), 951 bytes | 475.00 KiB/s, done
 ```
+3. `.gitignore`. Mengabaikan nama file yang berada dalam list gitignore untuk di update ke repository
+- Membuat gitignore dengan perintah `touch .gitignore` fungsi `.` sebelum `gitignore` adalah hiden file gitignore
+- menambahkan list file dalam gitignore dengan `nano .gitignore` 
 
-3. `git pull`. memperbarui repository dalam komputer
+4. `git pull`. memperbarui repository dalam komputer
 ```
 git pull origin <nama branch>
 ```
@@ -140,7 +143,3 @@ Fast-forward
  1 file changed, 1 insertion(+), 11 deletions(-)
 
 ```
-4. `git add`. Untuk menambahkan file
-5. `git commit`. Untuk konfirmasi penambahan dan atau pengubahan file
-   `git commit`+`-m` konfirmasi dengan menambhakan pesan
-6. `git push`. Mengirim perubahan ke repository
