@@ -84,5 +84,6 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 5. Copy isi tersebut dan buka github.com/setting/keys, klik New SSH Key dan paste kemudian save
 6. kemudian cek apakah sudah terhubung dengan perintah *ssh -T git@github.com* dan akan memunculkan respon jika berhasil
 7. Kemudian membuat repository
-   - membuat folder untuk penyimpanan repository
-   - kemudian perintah *git init* yang akan meg inisialisasi git
+   - membuat folder untuk penyimpanan repository dan kemudian perintah *git init* yang        akan menginisialisasi git
+   - dan akan muncul file baru ber ekstensi .git yang merupakan server lokal kita            sebelum masuk ke Git
+8. 'gitclone' Perintah untuk clone 
