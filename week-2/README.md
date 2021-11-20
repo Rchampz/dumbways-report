@@ -173,6 +173,7 @@ git clone <url repository> <folder tujuan>
 <p align="center">
 <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitclone1.jpg" />
 </p>
+
 - hasil sesudah `git clone`
 <p align="center">
 <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitclone2.jpg" />
