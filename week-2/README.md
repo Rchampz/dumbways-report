@@ -213,7 +213,31 @@ git commit -m <pesan>
 `-m` digunakan untuk menambahkan pesan kedalam file yang diunggah ke repositori tanpa mengganggu isi dari file sekaligus sebagai identifikasi apa saja revisi yang telah dilakukan
 
 
+6. `git branch` 
+```
+git branch -a
+git branch -M main
+git branch <namabranchbaru>
+```
+`git branch`+`-a` untuk melihat branch yang aktif
+`git branch`+`-M`+`main` untuk mengubah nama branch utama menjadi main karena untuk github branch utama diset otomatis bernama main
+`git branch`+`<namabranchbaru>` untuk membuat branch baru
 
+7. `git remote` Digunakan untuk membuat repository online
+```
+git remote add <namagit><alamat git>
+git remote add origin git@github.com:rifaicham/dumbways-git.git
+```
+8. `git push` Digunakan untuk mengunggah repository dari komputer ke repository online
+ ```
+ git push -u origin main
+ ```
+9. `git pull` memperbarui repository yang telah diunduh ke dalam komputer menggunakan perintah git pull.
+```
+git pull origin <nama branch>
+```
+
+---
 ## Study Case
 Dalam sebuah project untuk membangun website dibutuhkan sebuah index.html yang memuat kebutuhan untuk web tersebut. Langkah-langkah dari proses development-staging-production adalah sebagai berikut
 
