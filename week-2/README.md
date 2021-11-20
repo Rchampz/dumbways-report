@@ -140,4 +140,7 @@ Fast-forward
  1 file changed, 1 insertion(+), 11 deletions(-)
 
 ```
-4. 
+4. `git add`. Untuk menambahkan file
+5. `git commit`. Untuk konfirmasi penambahan dan atau pengubahan file
+   `git commit`+`-m` konfirmasi dengan menambhakan pesan
+6. `git push`. Mengirim perubahan ke repository
