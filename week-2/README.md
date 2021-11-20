@@ -110,11 +110,11 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 7. Kemudian membuat repository
    - membuat folder untuk penyimpanan repository dan kemudian perintah *git init* yang akan menginisialisasi git
 	<p align="center">
-	<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/7.jpg" />
+	<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/7.1.jpg" />
 	</p>
    - dan akan muncul file baru ber ekstensi .git yang merupakan server lokal kita sebelum masuk ke Git
 	<p align="center">
-	<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/1.jpg" />
+	<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/7.2.jpg" />
 	</p>
 
 
@@ -135,41 +135,28 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
-2. `git clone`. megunduh repository ke dalam komputer
+
+2. `.gitignore`. Mengabaikan nama file yang berada dalam list gitignore untuk di update ke repository
+- Membuat gitignore dengan perintah `touch .gitignore` fungsi `.` sebelum `gitignore` adalah hiden file gitignore
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitignore1.jpg" />
+</p>
+- menambahkan list file dalam gitignore dengan `nano .gitignore` 
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitignore2.jpg" />
+</p>
+
+3. `git clone`. megunduh repository ke dalam komputer
 ```
 git clone <url repository> <folder tujuan>
 ```
-hasil `git clone`
-```
-git clone https://github.com/rifaicham/rifaicham.git rifaicham
-Cloning into 'rifaicham'...
-remote: Enumerating objects: 3, done.
-remote: Counting objects: 100% (3/3), done.
-remote: Compressing objects: 100% (2/2), done.
-remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (3/3), 951 bytes | 475.00 KiB/s, done
-```
-3. `.gitignore`. Mengabaikan nama file yang berada dalam list gitignore untuk di update ke repository
-- Membuat gitignore dengan perintah `touch .gitignore` fungsi `.` sebelum `gitignore` adalah hiden file gitignore
-- menambahkan list file dalam gitignore dengan `nano .gitignore` 
+- hasil sebelum `git clone`
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitclone1.jpg" />
+</p>
+- hasil sesudah `git clone`
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitclone2.jpg" />
+</p>
 
-4. `git pull`. memperbarui repository dalam komputer
-```
-git pull origin <nama branch>
-```
-hasil `git pull`
-```
-cchampz@ubuntu:~/Documents/Dumbways$ git pull https://github.com/rifaicham/Rchampz.git
-remote: Enumerating objects: 5, done.
-remote: Counting objects: 100% (5/5), done.
-remote: Compressing objects: 100% (1/1), done.
-remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (3/3), 639 bytes | 639.00 KiB/s, done.
-From https://github.com/rifaicham/Rchampz
- * branch            HEAD       -> FETCH_HEAD
-Updating be56b07..44ab3ce
-Fast-forward
- README.md | 12 +-----------
- 1 file changed, 1 insertion(+), 11 deletions(-)
 
-```
