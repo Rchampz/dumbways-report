@@ -178,5 +178,7 @@ git clone <url repository> <folder tujuan>
 <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitclone2.jpg" />
 </p>
 
+---
+## Study Case
+Dalam sebuah project untuk membangun website dibutuhkan sebuah index.html yang memuat kebutuhan untuk web tersebut. Langkah-langkah dari proses development-staging-production adalah sebagai berikut
 
-### Study Case
