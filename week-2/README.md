@@ -90,7 +90,7 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 ```
 git clone <url repository> <folder tujuan>
 ```
-contoh
+   contoh `git clone`
 ```
 git clone https://github.com/rifaicham/rifaicham.git rifaicham
 Cloning into 'rifaicham'...
