@@ -116,6 +116,9 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 	<p align="center">
 	<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/1.jpg" />
 	</p>
+
+
+
 ### Perintah perintah Git
 1. `git status`. melihat status git yang berada dikomputer.
 
