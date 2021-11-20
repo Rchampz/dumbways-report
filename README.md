@@ -6,8 +6,8 @@
 - [Baca lebih lanjut](week-1/README.md)
 
 ## Minggu ke 2
-- Setup git & Ssh key
-- Setup database & Deploy aplikasi backend
+- Instalasi linux server
+- GIT
 - [Baca lebih lanjut](week-2/README.md)
 
 ## Minggu ke 3
