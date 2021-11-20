@@ -14,4 +14,6 @@ Instalasi, Konfigurasi, Service management serta Membuat Dokumentasinya
 
 
 ## Proses Instalasi Linux
-1. 
+1. Sebelumnya disini saya menggunakan VMWare guna menginstall linucx dengan kernel ubuntu server secara virtualmachine dan menggunakan ubuntu server 18.04.6 yang bisa        didownload diwebsite resmi ubuntu dalam link berikut. https://releases.ubuntu.com/18.04/
+   Setalah berhasil download, kemudian di install dalam VMWare dan diarahkan ke file berekstensi .iso yang tealh didownload
+   [step1](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/1.jpg)
