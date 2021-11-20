@@ -84,9 +84,19 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 5. Copy isi tersebut dan buka github.com/setting/keys, klik New SSH Key dan paste kemudian save
 6. kemudian cek apakah sudah terhubung dengan perintah `ssh -T git@github.com` dan akan memunculkan respon jika berhasil
 7. Kemudian membuat repository
-   - membuat folder untuk penyimpanan repository dan kemudian perintah *git init* yang        akan menginisialisasi git
-   - dan akan muncul file baru ber ekstensi .git yang merupakan server lokal kita            sebelum masuk ke Git
+   - membuat folder untuk penyimpanan repository dan kemudian perintah *git init* yang akan menginisialisasi git
+   - dan akan muncul file baru ber ekstensi .git yang merupakan server lokal kita sebelum masuk ke Git
 8. `git clone`. Unduh repository ke dalam komputer menggunakan perintah
-
 ```
 git clone <url repository> <folder tujuan>
+```
+contoh
+```
+git clone https://github.com/rifaicham/rifaicham.git rifaicham
+Cloning into 'rifaicham'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 951 bytes | 475.00 KiB/s, done
+```
