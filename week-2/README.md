@@ -40,19 +40,19 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 ![step8](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/8.jpg)
 
 9. Kemudian pilih done sampai kemenu set up IP. Dalam setup IP karena kita menggunakan Netwok Bridge maka akan mengikuti komputer dasar yang dijalankan. Bisa secara manual setting IP dengan edit IP4 atau menggunakan DHCP agar Ipnya otomatis.
-![step9](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/9.jpg)
+  ![step9](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/9.jpg)
 
 10. Setelah selesai, pilih done dan proses akan berlanjut menuju profile setting
-![step10](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/10.jpg)
+  ![step10](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/10.jpg)
 
 11. Kemudian berlanjut ke program apa saja yang ingin di install, dapat dengan mecentang program yang ingin di install. Setelah selesai pilih done
-![step11](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/11.jpg)
+  ![step11](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/11.jpg)
 
 12. Setelah itu proses instalasi akan berlanjut. Tunggu sampai proses selesai
-![step12](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/12.jpg)
+  ![step12](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/12.jpg)
 
 13. Setelah selesai kita kan diminta memasukkan username beserta password. Dan setelah berhasil memasukkannya kita akan diarahkan ke root sistem
-![step13](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/13.jpg)
+  ![step13](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/13.jpg)
 
 14. Kemudian jalankan sudo apt update untuk mengupdate sistem dan sudo apt upgrade untuk mengupgrade sistem. Dan berlanjut sistem akan cek apakah ada update dan jika ada update kita dapat memilih menginstall update tersebut atau tidak dengan perintah(y/n) y unyuk menerima update dan n untuk membatalkannya.
-![step14](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/14.jpg)
+  ![step14](https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/14.jpg)
