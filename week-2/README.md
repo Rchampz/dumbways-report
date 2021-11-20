@@ -10,7 +10,7 @@ Instalasi, Konfigurasi, Service management serta Membuat Dokumentasinya
 # Penyelesaian
 - [Dokumentasi proses instalasi linux](https://github.com/rifaicham/dumbways-report/tree/main/week-2#proses-instalasi-linux) 
 - [Dokumentasi Git](https://github.com/rifaicham/dumbways-report/tree/main/week-2#dokumentasi-git) 
-- 
+- [Study case](https://github.com/rifaicham/dumbways-report/tree/main/week-2#study-case) 
 
 
 ## Proses Instalasi Linux
@@ -179,3 +179,4 @@ git clone <url repository> <folder tujuan>
 </p>
 
 
+### Study Case
