@@ -9,7 +9,7 @@ Instalasi, Konfigurasi, Service management serta Membuat Dokumentasinya
 
 # Penyelesaian
 - [Dokumentasi proses instalasi linux](https://github.com/rifaicham/dumbways-report/tree/main/week-2#proses-instalasi-linux) 
-- [Setup database & Deploy aplikasi backend](setup-database-dan-deploy-aplikasi-backend.md)
+- [Dokumentasi Git](https://github.com/rifaicham/dumbways-report/tree/main/week-2#dokumentasi-git) 
 - 
 
 
@@ -71,3 +71,6 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 <p align="center">
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/instalasi%20linux/14.jpg" />
 </p>
+
+
+## Dokumentasi Git
