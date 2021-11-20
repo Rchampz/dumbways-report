@@ -107,6 +107,8 @@ Pilih bahasa yang dimengerti, disini saya memilih english
 7. Kemudian membuat repository
    - membuat folder untuk penyimpanan repository dan kemudian perintah *git init* yang akan menginisialisasi git
    - dan akan muncul file baru ber ekstensi .git yang merupakan server lokal kita sebelum masuk ke Git
+
+
 ### Perintah perintah Git
 1. `git status`. melihat status git yang berada dikomputer.
 
