@@ -89,11 +89,25 @@ Pilih bahasa yang dimengerti, disini saya memilih english
    - membuat folder untuk penyimpanan repository dan kemudian perintah *git init* yang akan menginisialisasi git
    - dan akan muncul file baru ber ekstensi .git yang merupakan server lokal kita sebelum masuk ke Git
 ### Perintah perintah Git
-1. `git clone`. megunduh repository ke dalam komputer
+1. `git status`. melihat status git yang berada dikomputer
+hasil `git status`
+```
+champz@ubuntu:~/Documents/Dumbways$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	rifaicham/
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+2. `git clone`. megunduh repository ke dalam komputer
 ```
 git clone <url repository> <folder tujuan>
 ```
-   contoh `git clone`
+hasil `git clone`
 ```
 git clone https://github.com/rifaicham/rifaicham.git rifaicham
 Cloning into 'rifaicham'...
@@ -103,3 +117,8 @@ remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), 951 bytes | 475.00 KiB/s, done
 ```
+2. `git pull`. memperbarui repository
+```
+git pull origin <nama branch>
+```
+contoh `git pull`
