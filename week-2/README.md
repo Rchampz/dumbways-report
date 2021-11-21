@@ -332,7 +332,7 @@ untuk lebih banyak setting workflows dari github dapat dilihat [disini](https://
 
 - `name: Super-Linter` merupakan nama workflows
 - `jobs:` adalah perintah tugas apa yang akan dijalankan 
-- `super-lint:`adalah tools untuk github-action yang disebut marketplasce berguna check code bahasa python. untuk mellihat deskripsi dari super linter [disini](https://github.com/marketplace/actions/super-linter)
+- `super-lint:`adalah tools untuk github-action yang disebut marketplasce berguna check berbagai macam bahasa pemrograman. untuk mellihat deskripsi dari super linter [disini](https://github.com/marketplace/actions/super-linter)
 - `runs-on: ubuntu-latest` adalah untuk menjalankan tools dalam virtual environtment. Untuk lebih jelas [disini](https://github.com/actions/virtual-environments)
 - `steps:` adalah langkah langkah dalam kondisi apa saja workflows akan aktif 
 - `DEFAULT_BRANCH: main` adalah menunjuk branch mana sebagai default untuk menjalankan workflows 
@@ -342,7 +342,7 @@ untuk lebih banyak setting workflows dari github dapat dilihat [disini](https://
 <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/github-action/githubaction3.1.jpg" />
 </p>
 
-bahwa ada warna titik kuning yang mana merupakan indikasi berjalannya workflows, warna kuning artinya proses, tanda silang dan warna merah artinya ada error dan jika berjalan sesuai dengan benar maka akan berwarna hijai atau muncul tanda checklist. pilih Tab actions untuk melihat lebih detail
+bahwa ada warna titik kuning yang mana merupakan indikasi berjalannya workflows, warna kuning artinya proses, tanda silang dan warna merah artinya ada error dan jika berjalan sesuai dengan benar maka akan berwarna hijau atau muncul tanda checklist. pilih Tab actions untuk melihat lebih detail
 <p align="center">
 <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/github-action/githubaction3.2.jpg" />
 </p>
