@@ -17,7 +17,7 @@ Instalasi, Konfigurasi, Service management serta Membuat Dokumentasinya
 
 - [Study case](https://github.com/rifaicham/dumbways-report/tree/main/week-2#study-case) 
 
--[CI/CD Github-action](https://github.com/rifaicham/dumbways-report/tree/main/week-2#ci/cd-github-action
+- [CI/CD Github-action](https://github.com/rifaicham/dumbways-report/tree/main/week-2#ci/cd-github-action)
 
 ## Proses Instalasi Linux
 1. Sebelumnya disini saya menggunakan VMWare guna menginstall linucx dengan kernel ubuntu server secara virtualmachine dan menggunakan ubuntu server 18.04.6 yang bisa didownload diwebsite resmi ubuntu dalam link berikut. https://releases.ubuntu.com/18.04/ Setalah berhasil download, kemudian di install dalam VMWare dan diarahkan ke file berekstensi .iso yang tealh didownload
