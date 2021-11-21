@@ -267,7 +267,7 @@ git pull origin <nama branch>
 ## Study Case
 Dalam sebuah project untuk membangun website dibutuhkan sebuah tools yang digunakan untuk pembayaran dalam web tersebut. Langkah-langkah dari proses *development-staging-production* adalah sebagai berikut.
 <p align="center">
-<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/branch.png" />
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/branch.png" />
 </p>
 
 1. Development
