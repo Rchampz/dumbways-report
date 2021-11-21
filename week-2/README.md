@@ -266,11 +266,15 @@ git pull origin <nama branch>
 ---
 ## Study Case
 Dalam sebuah project untuk membangun website dibutuhkan sebuah tools yang digunakan untuk pembayaran dalam web tersebut. Langkah-langkah dari proses *development-staging-production* adalah sebagai berikut.
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/branch.png" />
+</p>
+
 1. Development
-Tahap pembuatan dan pengetesan tools oleh programmer
+Tahap pembuatan tools oleh programmer menggunakan baha pemrograman yang sesuai dan dites oleh programmer apakah sesuai dengan krbutuhan dari tools
 2. Staging
-Tahap untuk mengetes fungsi tools oleh QA (Quality assurance). Setelah lulus uji oleh QA tools baru dapat dilanjutkan ke tahap production
+Tahap untuk testing fungsi tools oleh QA (Quality assurance), testing bisa otomatis dan manual tergantung kebutuhan dan kondisional tools. Setelah lulus uji oleh QA tools baru dapat dilanjutkan ke tahap production
 3. Production
-Tahap tools yang siap digunakan oleh konsumen untuk melakukan pembayaran. Dan jika semisal dalam penambahan tools pembayaran terjadi error maka bisa dikembalikan kedalam versi sebelumnya. 
+Tahap tools yang siap digunakan dan sudah masuk ke website kemudian oleh konsumen digunakan untuk melakukan pembayaran. Dan jika semisal dalam penambahan tools pembayaran terjadi error maka bisa dikembalikan kedalam versi sebelumnya. 
 
 
