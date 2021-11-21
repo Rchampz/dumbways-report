@@ -294,7 +294,7 @@ Tahap tools yang siap digunakan dan sudah masuk ke website kemudian oleh konsume
 ---
 
 ## CI/CD Github Action
-
+Untuk penjelasan Ci/CD [disini](https://suganda.medium.com/jenkins-mengenal-jenkins-ci-cd-58008b3c747a)
 1. Buka github.com dan buat repository baru
 <p align="center">
 <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/github-action/githubaction1.jpg" />
