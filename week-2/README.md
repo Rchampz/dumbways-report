@@ -239,11 +239,12 @@ git branch <namabranchbaru>
 <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/Perintah%20git/gitbranch.jpg" />
 </p>
 
-7. `git remote` Digunakan untuk membuat repository online
+7. `git remote` 
 ```
-git remote add <namagit><alamat git>
+git remote add <namagit><alamat repository>
 git remote add origin git@github.com:rifaicham/dumbways-git.git
 ```
+`git remote`+`add`+`<alamat repository>` Digunakan untuk menambah repository online yang akan dibuat untuk mengupload git dari komputer ke git online
 
 8. `git push` Digunakan untuk mengunggah repository dari komputer ke repository online
  ```
