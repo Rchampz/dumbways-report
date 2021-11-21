@@ -293,3 +293,48 @@ Tahap tools yang siap digunakan dan sudah masuk ke website kemudian oleh konsume
 
 ## CI/CD Github Action
 
+1. Buka github.com dan buat repository baru
+2. setelah dibuat repository baru, create new file `.github/workflows/<namaworkflows>.yml` dan copy code dibawah
+```
+name: Super-Linter
+
+on: push
+
+jobs:
+  super-lint:
+    name: Lint code base
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run Super-Linter
+        uses: github/super-linter@v3
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+code diatas merupakan format dari github untuk membuat workflows dan harus berada di repository `.github/workflows`.
+untuk lebih banyak setting workflows dari github dapat dilihat [disini](https://github.com/actions)
+- `name: Super-Linter` merupakan nama workflows
+- `jobs:` adalah perintah tugas apa yang akan dijalankan 
+- `super-lint:`adalah tools untuk github-action yang disebut marketplasce berguna check code bahasa python. untuk mellihat deskripsi dari super linter [disini](https://github.com/marketplace/actions/super-linter)
+- `runs-on: ubuntu-latest` adalah untuk menjalankan tools dalam virtual environtment. Untuk lebih jelas [disini](https://github.com/actions/virtual-environments)
+- `steps:` adalah langkah langkah dalam kondisi apa saja workflows akan aktif 
+- `DEFAULT_BRANCH: main` adalah menunjuk branch mana sebagai default untuk menjalankan workflows 
+
+3. Setelah dicreate maka dapat dilihat 
+
+bahwa ada warna titik kuning yang mana merupakan indikasi berjalannya workflows, warna kuning artinya proses, tanda silang dan warna merah artinya ada error dan jika berjalan sesuai dengan benar maka akan berwarna hijai atau muncul tanda checklist.
+
+4. Untuk mencoba workflows yang telah dibuat, sekarang `create new file` dan tuliskan code dalam bahasa python untuk di cek apakah bisa berjalan. Disini membuat file bernama `test.py` dan isi dari programnya adalah
+```
+print("Dumbways.id)
+```
+- program akan dicek oleh workflow yang telah dibuat mengggunakan tools github-action super-lint. Gambar dibawah jika dilihat dalam tab Action akan menunjukkan proses dari workflows.
+- Jika program ada error maka akan muncul tanda silang. dan akan mendapatkan notifikasi email bahwa ada code yang error
+- Sekarang coba perbaiki code menjadi
+```
+print("Dumbways.id")
+```
+Sekarang dapat dilihat bahwa sudah tidak ada error dan tanda sudah berubah ke checklist.
