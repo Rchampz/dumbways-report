@@ -10,6 +10,10 @@ Instalasi, Konfigurasi, Service management serta Membuat Dokumentasinya
 # Penyelesaian
 - [Dokumentasi proses instalasi linux](https://github.com/rifaicham/dumbways-report/tree/main/week-2#proses-instalasi-linux) 
 - [Dokumentasi Git](https://github.com/rifaicham/dumbways-report/tree/main/week-2#dokumentasi-git) 
+	- [Install git](https://github.com/rifaicham/dumbways-report/tree/main/week-2#instal-git-dan-konfigurasi)
+	- [Tahap file git](https://github.com/rifaicham/dumbways-report/tree/main/week-2#step-atau-tahapan-dalam-git)
+	- [Perintah git](https://github.com/rifaicham/dumbways-report/tree/main/week-2#perintah-perintah-git)
+	- 
 - [Study case](https://github.com/rifaicham/dumbways-report/tree/main/week-2#study-case) 
 
 
