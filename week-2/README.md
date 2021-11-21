@@ -272,9 +272,23 @@ Dalam sebuah project untuk membangun website dibutuhkan sebuah tools yang diguna
 
 1. Development
 Tahap pembuatan tools oleh programmer menggunakan baha pemrograman yang sesuai dan dites oleh programmer apakah sesuai dengan krbutuhan dari tools
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/development.jpg" />
+</p>
+
 2. Staging
 Tahap untuk testing fungsi tools oleh QA (Quality assurance), testing bisa otomatis dan manual tergantung kebutuhan dan kondisional tools. Setelah lulus uji oleh QA tools baru dapat dilanjutkan ke tahap production
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/staging.jpg" />
+</p>
+
 3. Production
 Tahap tools yang siap digunakan dan sudah masuk ke website kemudian oleh konsumen digunakan untuk melakukan pembayaran. Dan jika semisal dalam penambahan tools pembayaran terjadi error maka bisa dikembalikan kedalam versi sebelumnya. 
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/production.jpg" />
+</p>
 
+---
+
+## CI/CD Github Action
 
