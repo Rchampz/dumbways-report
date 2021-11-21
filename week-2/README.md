@@ -9,13 +9,15 @@ Instalasi, Konfigurasi, Service management serta Membuat Dokumentasinya
 
 # Penyelesaian
 - [Dokumentasi proses instalasi linux](https://github.com/rifaicham/dumbways-report/tree/main/week-2#proses-instalasi-linux) 
+
 - [Dokumentasi Git](https://github.com/rifaicham/dumbways-report/tree/main/week-2#dokumentasi-git) 
 	- [Install git](https://github.com/rifaicham/dumbways-report/tree/main/week-2#instal-git-dan-konfigurasi)
 	- [Tahap file git](https://github.com/rifaicham/dumbways-report/tree/main/week-2#step-atau-tahapan-dalam-git)
 	- [Perintah git](https://github.com/rifaicham/dumbways-report/tree/main/week-2#perintah-perintah-git)
-	- 
+
 - [Study case](https://github.com/rifaicham/dumbways-report/tree/main/week-2#study-case) 
 
+-[CI/CD Github-action](https://github.com/rifaicham/dumbways-report/tree/main/week-2#ci/cd-github-action
 
 ## Proses Instalasi Linux
 1. Sebelumnya disini saya menggunakan VMWare guna menginstall linucx dengan kernel ubuntu server secara virtualmachine dan menggunakan ubuntu server 18.04.6 yang bisa didownload diwebsite resmi ubuntu dalam link berikut. https://releases.ubuntu.com/18.04/ Setalah berhasil download, kemudian di install dalam VMWare dan diarahkan ke file berekstensi .iso yang tealh didownload
@@ -294,7 +296,15 @@ Tahap tools yang siap digunakan dan sudah masuk ke website kemudian oleh konsume
 ## CI/CD Github Action
 
 1. Buka github.com dan buat repository baru
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/github-action/githubaction1.jpg" />
+</p>
+
 2. setelah dibuat repository baru, create new file `.github/workflows/<namaworkflows>.yml` dan copy code dibawah
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/github-action/githubaction2.1.jpg" />
+</p>
+
 ```
 name: Super-Linter
 
@@ -316,6 +326,10 @@ jobs:
 ```
 code diatas merupakan format dari github untuk membuat workflows dan harus berada di repository `.github/workflows`.
 untuk lebih banyak setting workflows dari github dapat dilihat [disini](https://github.com/actions)
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/github-action/githubaction2.2.jpg" />
+</p>
+
 - `name: Super-Linter` merupakan nama workflows
 - `jobs:` adalah perintah tugas apa yang akan dijalankan 
 - `super-lint:`adalah tools untuk github-action yang disebut marketplasce berguna check code bahasa python. untuk mellihat deskripsi dari super linter [disini](https://github.com/marketplace/actions/super-linter)
@@ -324,17 +338,35 @@ untuk lebih banyak setting workflows dari github dapat dilihat [disini](https://
 - `DEFAULT_BRANCH: main` adalah menunjuk branch mana sebagai default untuk menjalankan workflows 
 
 3. Setelah dicreate maka dapat dilihat 
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/github-action/githubaction3.1.jpg" />
+</p>
 
-bahwa ada warna titik kuning yang mana merupakan indikasi berjalannya workflows, warna kuning artinya proses, tanda silang dan warna merah artinya ada error dan jika berjalan sesuai dengan benar maka akan berwarna hijai atau muncul tanda checklist.
+bahwa ada warna titik kuning yang mana merupakan indikasi berjalannya workflows, warna kuning artinya proses, tanda silang dan warna merah artinya ada error dan jika berjalan sesuai dengan benar maka akan berwarna hijai atau muncul tanda checklist. pilih Tab actions untuk melihat lebih detail
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/github-action/githubaction3.2.jpg" />
+</p>
+
 
 4. Untuk mencoba workflows yang telah dibuat, sekarang `create new file` dan tuliskan code dalam bahasa python untuk di cek apakah bisa berjalan. Disini membuat file bernama `test.py` dan isi dari programnya adalah
 ```
 print("Dumbways.id)
 ```
 - program akan dicek oleh workflow yang telah dibuat mengggunakan tools github-action super-lint. Gambar dibawah jika dilihat dalam tab Action akan menunjukkan proses dari workflows.
-- Jika program ada error maka akan muncul tanda silang. dan akan mendapatkan notifikasi email bahwa ada code yang error
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/github-action/githubaction4test.jpg" />
+</p>
+
+- Jika program ada error maka akan muncul tanda silang.
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/github-action/githubaction4test1.jpg" />
+</p>
+
 - Sekarang coba perbaiki code menjadi
 ```
 print("Dumbways.id")
 ```
 Sekarang dapat dilihat bahwa sudah tidak ada error dan tanda sudah berubah ke checklist.
+<p align="center">
+<img src="https://github.com/rifaicham/dumbways-report/blob/main/week-2/assets/github-action/githubaction4test2.jpg" />
+</p>
