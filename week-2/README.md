@@ -291,4 +291,50 @@ Tahap tools yang siap digunakan dan sudah masuk ke website kemudian oleh konsume
 ---
 
 ## CI/CD Github Action
+1. Membuat repository yang akan digunakan untuk menyimpan workflow CI/CD github action
+2. Buka repository yang baru dibuat dan capy code nya
+3. setelah dicopy sekarang masukkan ke dalam perintah `git clone` ini digunakan untuk menyalin repository kedalam komputer
+4. Arahkan kedalam direktori yang baru di download
+5. Inisiasi bahasa pemrograman yang akan digunakan untuk integrasi dan developmen (disini menggunakan javascript untuk inisiasi `npm init -y`
+6. Kemudian buat file action.yml dan isikan code berikut
+```
+name: 'Thank You Action'
+description: 'Say "Thank You" to new pull requests'
+author: '[Your Name]'
 
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub token'
+    required: true
+  TENOR_TOKEN:
+    description: 'Tenor API token'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+```
+Code diatas merupakan format dari github action yang berisikan
+- Membuat perintah baru yang disebut `Thank You Action`
+- menambahkan 2 input yaitu `GITHUB_TOKEN` dan `TENOR_TOKEN` yang masing masing kegunaannya adalah untuk memanggil github dan tenor dalam perintah yang kita baru buat
+- Menggunakan node js versi 12 `using: 'node12'`
+- Membuat `dist/index.js` sebagai entry point dari script
+7. Membuat direktori yang bernama `src` yang akan digunakan sebagai meletakkan script yang akan berjalan 
+(disini menggunakan javascript untuk perintah mencetak tulisan `Halo Pelanggan!`
+```
+async function run() {
+  console.log('Halo Pelanggan!');
+}
+
+run();
+```
+
+8. Kemudian dalam `package.json` tambahkan dibawah object `script`
+```
+...
+"scripts": {
+  "build": "ncc build src/action.js -o dist"
+  ...,
+},
+...
+```
