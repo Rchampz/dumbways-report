@@ -1,14 +1,21 @@
-# Week 3
-Jelaskan maksud dari week 3 ini, apa yang akan Anda buat serta berikan gambar arsitekturnya.
+# Membuat Dokumentasi Manage Server
 
-# Kebutuhan
-Jelaskan kebutuhan yang harus ada sebelum memulai, seperti:
-- Server : -
-- Security group : -
-- Aplikasi frontend : -
-- Aplikasi backend : -
-- Dll
+## Requirements
 
-# Penyelesaian
-- [Setup docker & Membuat custom docker image](setup-docker-dan-membuat-custom-docker-image.md)
-- [Setup CI/CD & Notifikasi](setup-ci-cd-dan-notifikasi.md)
+- Buatlah dokumentasi proses tiap perintah yang dipelajari di materi manage server with terminal.
+- Tambahkan perintah perintah yang dapat membantumu untuk me-manage/me-monitoring sebuah server yang tidak dipelajari di materi manage server with terminal.
+- Buatlah dokumentasi terpisah mengenai cmsmanajer.com dari awal hingga selesai.
+
+## Penyelesaian
+- Dokumentasi manage server with terminal
+- Perintah tambahan
+- cmsmanajer.com
+
+### Dokumentasi manage server with terminal
+1. Perintah `nano`
+  - `sudo apt install nano` digunakan untuk instalasi teks editor nano jika belum terinstal.
+  - `nano --version` digunakan untuk memeriksa versi nano yang terinstall
+  - `nano <namafile>` digunakan untuk membuka file dengan teks editor nano
+  - `nano <direktori>/<namafile>` digunakan untuk membuka file dengan teks editor nano yang berada di direktori lain
+  - perintah perintah untuk menyimpan file, keluar dari teks editor dan lain sebagainya dapat dilihat dibawah teks editor nano. seperti ang merupakan `ctrl`+`X` untuk keluar dari teks editor, `^O` untuk menyimpan hasil edit tanpa keluar dari nano, `^W` yang diguanakan untuk mencari teks, tombol `alt`+`A` yang digunakan untuk memilih teks, dan untuk mencopynya dengan `ctrl`+`6` dan untuk paste `ctrl`+`U`, untuk cut `ctrl`+`K`
+  - 
