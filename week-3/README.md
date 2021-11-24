@@ -17,5 +17,15 @@
   - `nano --version` digunakan untuk memeriksa versi nano yang terinstall
   - `nano <namafile>` digunakan untuk membuka file dengan teks editor nano
   - `nano <direktori>/<namafile>` digunakan untuk membuka file dengan teks editor nano yang berada di direktori lain
-  - perintah perintah untuk menyimpan file, keluar dari teks editor dan lain sebagainya dapat dilihat dibawah teks editor nano. seperti ang merupakan `ctrl`+`X` untuk keluar dari teks editor, `^O` untuk menyimpan hasil edit tanpa keluar dari nano, `^W` yang diguanakan untuk mencari teks, tombol `alt`+`A` yang digunakan untuk memilih teks, dan untuk mencopynya dengan `ctrl`+`6` dan untuk paste `ctrl`+`U`, untuk cut `ctrl`+`K`
-  - 
+  - perintah perintah untuk menyimpan file, keluar dari teks editor dan lain sebagainya dapat dilihat dibawah teks editor nano. 
+      - seperti `^X` yang merupakan `ctrl`+`X` untuk keluar dari teks editor, 
+      - `^O` untuk menyimpan hasil edit tanpa keluar dari nano, 
+      - `^W` yang diguanakan untuk mencari teks, 
+      - tombol `alt`+`A` yang digunakan untuk memilih teks, dan untuk mencopynya dengan `ctrl`+`6` dan untuk paste `ctrl`+`U`, untuk cut `ctrl`+`K`
+      - `ctrl`+`A` digunakan untuk mengarahkan cursor keawal baris dan `ctrl`+`E` untuk mengarahkan ke akhir baris
+2. Text manipulation
+- Perintah `cat` digunakan untuk membuat daftar content atau isi file
+    - `cat file.txt` digunakan untuk melihat isi file
+    - `cat > file` digunakan untuk membuiat file yg bernama file
+    - `cat file.txt file > filegabungan` untuk menjadikan content file.txt dan file menjadi satu dalam file gabungan
+    - 
