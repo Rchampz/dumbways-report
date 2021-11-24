@@ -36,4 +36,9 @@
   - Perintah `sort` digunakan untuk sortir data berdasarkan ascending atau descending dalam urutan abjad maupun huruf
     - `sort fielgabungan` digunakan untuk sortir ascending
     - `sort -r filegabungan` digunakan untuk sortir descending
+  - Perintah `echo` yang digunakan untuk mencetak string
+    - `echo "HELLO GUYS!"` yang digunakan untuk mencetak string HELLO GUYS!
+    - `echo "ini isi dari fileecho" >> fileecho` yang digunakan untuk menulis string dan disimpan dalam file fileecho
+    - `echo "fileecho tealh direplace" > fileecho` digunakan untuk me-replace content dari fileecho
+3. Monitoring
   - 
