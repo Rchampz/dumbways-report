@@ -40,5 +40,32 @@
     - `echo "HELLO GUYS!"` yang digunakan untuk mencetak string HELLO GUYS!
     - `echo "ini isi dari fileecho" >> fileecho` yang digunakan untuk menulis string dan disimpan dalam file fileecho
     - `echo "fileecho tealh direplace" > fileecho` digunakan untuk me-replace content dari fileecho
-3. Monitoring
-  - 
+3. Monitoring 
+    Aktifitas untuk melihat kinerja sistem secara realtime
+  - Perintah `htop` yang digunakan untuk memonitoring sistem dan dapat melihat penggunaan memory, cpu, dan ram
+    ```
+    sudo apt install htop 
+    htop
+    ```
+    `sudo apt install htop` digunakan untuk menginstal htop jika belum terinstal dan perintah `htop` digunakan untuk menjalan htop
+  - Perintah `nmon` yang digunakan untuk monitoring
+    ```
+    sudo apt install nmon
+    nmon
+    ```
+    `sudo apt install nmon` digunaakan untuk install nmon dan perintah `nmon` digunakan untuk menjalannya. Ketika menjalankan nmon akan muncul tampilan untuk bisa memilih apa yang akan dimonitoring
+  - Perintah `lsof` yang digunakan untuk melihat seluruh file yang terbuka berdasarkan proses aktif yang berjalan disistem
+    - `lsof -u username` digunakan untuk melihat proses yang aktif yang dilakukan oleh username
+    -  `lsof -i port` difunakan untuk melihat proses yang aktif pada port yang dituju
+  - Perintah `ps` yang merupakan singkatan process status untuk mengetahui daftar proses yang berjalan pada sistem
+    - `ps -f -u username` untuk menampilkan proses pada user
+    - `ps -aux` digunakan untuk melihat semua proses secara lengkap
+4. Network Firewall
+    Merupakan perintah yang dapat digunakan untuk mengamankan server
+   - Perintah `iptables`
+      Merupakan sebuiah module di linux yang memebrikan dukungan langsung terhadap kernel untuk keamanan sistem serta beberapa keperluan jaringan
+   - Perintah `ufw` (uncomplicated firewall) salahsatu fitur frontend iptables pada linux untuk konfigurasi jaringan
+    - `sudo apt install ufw` digunakan untuk installasi ufw jika belum ada
+    - `sudo ufw default deny incoming` digunakan untuk memblokir semua akses yang masuk
+    - `sudo ufw default allow outgoing` digunakan untuk membuka akses keluar
+    - `sudo ufw app list` untuk melihat daftar aplikasi yang didukukung oleh ufw
