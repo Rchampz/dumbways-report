@@ -15,6 +15,7 @@
 1. Perintah `nano`
   - `sudo apt install nano` digunakan untuk instalasi teks editor nano jika belum terinstal.
   - `nano --version` digunakan untuk memeriksa versi nano yang terinstall
+
   - `nano <namafile>` digunakan untuk membuka file dengan teks editor nano
   - `nano <direktori>/<namafile>` digunakan untuk membuka file dengan teks editor nano yang berada di direktori lain
   - perintah perintah untuk menyimpan file, keluar dari teks editor dan lain sebagainya dapat dilihat dibawah teks editor nano. 
