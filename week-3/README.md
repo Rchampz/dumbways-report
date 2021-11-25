@@ -15,10 +15,24 @@
 1. Perintah `nano`
   - `sudo apt install nano` digunakan untuk instalasi teks editor nano jika belum terinstal.
   - `nano --version` digunakan untuk memeriksa versi nano yang terinstall
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/nano.jpg" />
+</p>
 
   - `nano <namafile>` digunakan untuk membuka file dengan teks editor nano
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/nanofile.jpg" />
+</p>
+
   - `nano <direktori>/<namafile>` digunakan untuk membuka file dengan teks editor nano yang berada di direktori lain
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/nanodirektorifile.jpg" />
+</p>
+
   - perintah perintah untuk menyimpan file, keluar dari teks editor dan lain sebagainya dapat dilihat dibawah teks editor nano. 
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/perintahnano.jpg" />
+</p>
       - seperti `^X` yang merupakan `ctrl`+`X` untuk keluar dari teks editor, 
       - `^O` untuk menyimpan hasil edit tanpa keluar dari nano, 
       - `^W` yang diguanakan untuk mencari teks, 
