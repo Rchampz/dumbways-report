@@ -7,8 +7,8 @@
 - Buatlah dokumentasi terpisah mengenai cmsmanajer.com dari awal hingga selesai.
 
 ## Penyelesaian
-- Dokumentasi manage server with terminal
-- Perintah tambahan
+- [Dokumentasi manage server with terminal](https://github.com/rifaicham/dumbways-report/tree/main/week-3#dokumentasi-manage-server-with-terminal) 
+- [Perintah tambahan]((https://github.com/rifaicham/dumbways-report/tree/main/week-3#perintah-tambahan) 
 - cmsmanajer.com
 
 ### Dokumentasi manage server with terminal
