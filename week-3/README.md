@@ -29,10 +29,10 @@
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/nanodirektorifile.jpg" />
 </p>
 
-  - perintah perintah untuk menyimpan file, keluar dari teks editor dan lain sebagainya dapat dilihat dibawah teks editor nano. 
-<p align="center">
+  - perintah perintah untuk menyimpan file, keluar dari teks editor dan lain sebagainya dapat dilihat dibawah teks editor nano. <p align="center">
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/perintahnano.jpg" />
 </p>
+
       - seperti `^X` yang merupakan `ctrl`+`X` untuk keluar dari teks editor, 
       - `^O` untuk menyimpan hasil edit tanpa keluar dari nano, 
       - `^W` yang diguanakan untuk mencari teks, 
