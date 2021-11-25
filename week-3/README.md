@@ -174,8 +174,8 @@
 <p align="center">
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/historygrep.jpg" />
 </p>
-
    maka akan memunculkan riwayat perintah yang menggunakan `git`
+
 3. Perintah `ping` yang digunakan untuk ping atau mengecek apakah terhubung ke dalam suatu alamat atau mengecek apakah alamat tersebut online
 <p align="center">
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/ping.jpg" />
