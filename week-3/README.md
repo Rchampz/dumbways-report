@@ -141,7 +141,7 @@
 
 4. Network Firewall
     Merupakan perintah yang dapat digunakan untuk mengamankan server
-   - Perintah `iptables`
+  - Perintah `iptables`
       Merupakan sebuiah module di linux yang memebrikan dukungan langsung terhadap kernel untuk keamanan sistem serta beberapa keperluan jaringan
 <p align="center">
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/iptables.jpg" />
