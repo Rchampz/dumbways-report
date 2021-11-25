@@ -11,8 +11,7 @@
 - [Baca lebih lanjut](week-2/README.md)
 
 ## Minggu ke 3
-- Setup docker & Membuat custom docker image
-- Setup CI/CD & Notifikasi]
+- Manage server with terminal
 - [Baca lebih lanjut](week-3/README.md)
 
 ## Minggu ke 4
