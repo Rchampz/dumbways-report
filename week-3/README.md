@@ -29,24 +29,46 @@
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/nanodirektorifile.jpg" />
 </p>
 
-  - perintah perintah untuk menyimpan file, keluar dari teks editor dan lain sebagainya dapat dilihat dibawah teks editor nano. <p align="center">
+  - perintah perintah untuk menyimpan file, keluar dari teks editor dan lain sebagainya dapat dilihat dibawah teks editor nano. 
+<p align="center">
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/perintahnano.jpg" />
 </p>
 
-      - seperti `^X` yang merupakan `ctrl`+`X` untuk keluar dari teks editor, 
-      - `^O` untuk menyimpan hasil edit tanpa keluar dari nano, 
-      - `^W` yang diguanakan untuk mencari teks, 
-      - tombol `alt`+`A` yang digunakan untuk memilih teks, dan untuk mencopynya dengan `ctrl`+`6` dan untuk paste `ctrl`+`U`, untuk cut `ctrl`+`K`
-      - `ctrl`+`A` digunakan untuk mengarahkan cursor keawal baris dan `ctrl`+`E` untuk mengarahkan ke akhir baris
+   - seperti `^X` yang merupakan `ctrl`+`X` untuk keluar dari teks editor, 
+   - `^O` untuk menyimpan hasil edit tanpa keluar dari nano, 
+   - `^W` yang diguanakan untuk mencari teks, 
+   - tombol `alt`+`A` yang digunakan untuk memilih teks, dan untuk mencopynya dengan `ctrl`+`6` dan untuk paste `ctrl`+`U`, untuk cut `ctrl`+`K`
+   - `ctrl`+`A` digunakan untuk mengarahkan cursor keawal baris dan `ctrl`+`E` untuk mengarahkan ke akhir baris
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/nanoaltA.jpg" />
+</p>
+
 2. Text manipulation
   - Perintah `cat` digunakan untuk membuat daftar content atau isi file
     - `cat file.txt` digunakan untuk melihat isi file
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/catfile.jpg" />
+</p>
     - `cat > file` digunakan untuk membuiat file yg bernama file
     - `cat file.txt file > filegabungan` untuk menjadikan content file.txt dan file menjadi satu dalam file gabungan
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/catgabungan.jpg" />
+</p>
+
   - Perintah `sed` yang merupakn singkatan dari stream editor yang digunakan untuk subtitusi satu kata tertentu dalam content suatu file menjadi kata yang diinginkan misalnya `sed -i 's/ini/itu/g' filegabungan` yang digunakan untuk mengubah kata ini menjadi kata itu dalam filegabungan 
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/sed.jpg" />
+</p>
+
   - Perintah `grep` yang digunakan untuk melakukan pencarian kata dalam content suatu file
     - `grep itu filegabungan` digunakan untuk mencari kata itu dalam file gabungan
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/grepitu.jpg" />
+</p>
     - `grep -c itu filegabungan` digunakan untuk menghitung kata itu dalam filegabungan
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/grepc.jpg" />
+</p>
     - `grep ini *` digunakan untuk mencari kata ini dalam semua file di direktori
   - Perintah `sort` digunakan untuk sortir data berdasarkan ascending atau descending dalam urutan abjad maupun huruf
     - `sort fielgabungan` digunakan untuk sortir ascending
