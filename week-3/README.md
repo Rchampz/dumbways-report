@@ -69,3 +69,14 @@
     - `sudo ufw default deny incoming` digunakan untuk memblokir semua akses yang masuk
     - `sudo ufw default allow outgoing` digunakan untuk membuka akses keluar
     - `sudo ufw app list` untuk melihat daftar aplikasi yang didukukung oleh ufw
+### Perintah Tambahan
+1. Perintah `history` yang digunakan untuk mengecek riwayat daftar proses apa saja yang dilakukan.
+2. Menggabungkan dua perintah dengan tanda `|` yang digunakan untuk men-spesifikkan perintah yang akan dijalankan
+    Misalnya menggabungkan perintah `history`+`grep` maka akan menjadi `history | grep kata yang mau dicari`. contohnya 
+    ```
+    history | grep git
+    ```
+    maka akan memunculkan riwayat perintah yang menggunakan `git`
+3. Perintah `ping` yang digunakan untuk ping atau mengecek apakah terhubung ke dalam suatu alamat atau mengecek apakah alamat tersebut online
+4. Perintah untuk terminate proses yang sedang dilakukan dalam bash dengan `ctrl`+`C` maka dalam bash akan tercetak seperti `^C` 
+5. 
