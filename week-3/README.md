@@ -79,4 +79,5 @@
     maka akan memunculkan riwayat perintah yang menggunakan `git`
 3. Perintah `ping` yang digunakan untuk ping atau mengecek apakah terhubung ke dalam suatu alamat atau mengecek apakah alamat tersebut online
 4. Perintah untuk terminate proses yang sedang dilakukan dalam bash dengan `ctrl`+`C` maka dalam bash akan tercetak seperti `^C` 
-5. 
+5. Perintah `pwd` yang merupakan akronim dari print working directory, yang berguna untuk mencetak dalam string direktori  apa yang sedang kita gunakan
+6. Perintah `rm` akronim dari remove yang digunakan untuk mengahpus file. Jika direktori yang mau dihapus maka perintahnya menjadi `rmdir`
