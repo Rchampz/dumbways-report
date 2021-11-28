@@ -17,22 +17,22 @@ Langkah selanjutnya dikarenakan gagal maka akan dilanjut dengan pengetahuan dari
 Agar dapat menginstall aplikasi yang dibutuhkan, perlu mengkoneksikan server dengan CMS manajer untuk melakukannya dengan cara
 1. Pada halaman dashboard, untuk pertama kali klik Connect Server
 <p align="center">
-  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/cms1.jpg" />
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/cms1.png" />
 </p>
 
 2. Kemudian akan dialihkan ke halaman detail informasi yang harus Kita masukkan ke dalam form. Seperti IP, Username dan Password.
 <p align="center">
-  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/cms2.jpg" />
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/cms2.png" />
 </p>
 
 3. Pada bagian I’d prefer to use adalah default web server yang akan Kita gunakan untuk aplikasinya (Apache / Nginx), tetapi Kita dapat memilihnya nanti dengan menekan Choose Later.
 Klik Connect untuk melanjutkan proses koneksi dengan CMS Manajer. Tunggu beberapa saat hingga semua proses tersebut selesai.
 <p align="center">
-  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/cms3.jpg" />
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/cms3.png" />
 </p>
 
 4. Jika sudah berhasil, maka akan terlihat seperti di bawah ini.
 <p align="center">
-  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/cms4.jpg" />
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/cms4.png" />
 </p>
 
