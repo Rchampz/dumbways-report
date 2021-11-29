@@ -195,3 +195,5 @@
 <p align="center">
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/rm.jpg" />
 </p>
+
+Perintah-perintah lain sepertinya masih sangat banyak dan bisa diliat pada dokumentasi linux sendiri atau di website https://www.vultr.com/docs/manage-your-linux-server-via-the-command-line-interface
