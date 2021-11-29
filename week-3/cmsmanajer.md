@@ -39,13 +39,47 @@ Klik Connect untuk melanjutkan proses koneksi dengan CMS Manajer. Tunggu beberap
 ## Install aplikasi
 CMS Manajer menyediakan fitur marketplace dan app management, yang dapat kita manfaatkan untuk install aplikasi yang Kita perlukan.
 1. Klik salah satu server pada menu dashboard di cmsmanajer
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/apps1.png" />
+</p>
+
 2. Kemudian buka menu -*create app*- untuk memilih aplikasi pada markerplace untuk di install
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/apps2.png" />
+</p>
+
 3. Terdapat beberapa pilihan aplikasi yang dapat di install. Pilih salah satu sesuai kebutuhan. 
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/apps3.png" />
+</p>
+
 4. dan jika berhasil maka aplikasi akan muncul pada menu -*Apps*-
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/apps4.png" />
+</p>
+
 
 ## Konfigurasi SSL
 SSL (Secure Socket Layer) merupakan salah satu komponen penting yang harus dimiliki website. Dengan SSL, transfer data di dalam website menjadi lebih aman dan terenkripsi. Dalam kasus ini adalah bagaimana mengamankan aplikasi yang sudah diinstall pada CMS
 1. Buat akun di cloudflare.com dan arahkan pada menu *dashboard*, kemdian pilih *add a site* dan ikuti langkah-langkahnya
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/ssl1.png" />
+</p>
+
 2. Kemudian kita klik domain yang kita miliki, masuk ke menu DNS. Pada dns management, tambahkan A record sesuai domain yang di buat pada CMS Manajer.
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/ssl2.png" />
+</p>
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/ssl2.1.png" />
+</p>
+
 3. Pastikan domain sesuai dengan yang telah disetting pada CMSmanajer
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/ssl3.png" />
+</p>
+
 4. dan hasilnya jika berhasil akan seperti berikut
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-3/assets/ssl4.png" />
+</p>
