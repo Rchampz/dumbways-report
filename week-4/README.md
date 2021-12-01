@@ -3,9 +3,9 @@ Jelaskan maksud dari week 4 ini
 
 # Kebutuhan
 1. Buat dokumentasi
-- aplikasi node js
-- aplikasi python
-- aplikasi golang
+   - aplikasi node js
+   - aplikasi python
+   - aplikasi golang
 2. Buat monitoring bagaimana cara mengecek aplikasi hidup/mati beserta langkah-langkahnya
 3. tiap aplikasi buat reverse proxy (dengan format (namaaplikasi.rifai.xyz))
 4. load balance nginx dokumentasi dan implementasi
@@ -20,5 +20,15 @@ Jelaskan maksud dari week 4 ini
 3. Reverse proxy
 4. Load Balance Nginx
 
-## Jawaban
-### 1. Dokumentasi pembuatan aplikasi dan konfigurasi
+# Jawaban
+
+## 1. Dokumentasi pembuatan aplikasi dan konfigurasi
+### Node Js
+- Instalasi node.js
+  1. Dapat melihat di website nodejs.org atau langsung melalui terminal dengan perintah `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash` 
+  2. Setelah itu jalankan perintah `nvm install 16.13.0` untuk menginstall node js versi 16.13.0 lts.
+     namun jika muncul notifikasi `command 'nvm' not found` jalankan perintah `source ~/.profile`
+  3. dilanjutkan dengan perintah `nvm use 16` untuk menggunakan yang versi 16
+  4. untuk mengecek apakah sudah terinstal dan melihat versi berapakah yang digunakan dengan cara `node -v` dan `npm -v`. Jika belum terdeteksi jalankan perintah `exec bash` 
+- Jika sudah terinstal sekarang kita mencoba membuat aplikasi sederhana menggunakan node.js
+  1. 
