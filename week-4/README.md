@@ -12,7 +12,7 @@ Jelaskan maksud dari week 4 ini
 
 
 # Penyelesaian
-1. Dokumentasi pembuatan aplikasi dan konfigurasi dalam
+1. [Dokumentasi pembuatan aplikasi dan konfigurasi dalam](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#dokumentasi-pembuatan-aplikasi-dan-konfigurasi)
    - Node.js
    - python
    - golang
