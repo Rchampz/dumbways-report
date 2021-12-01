@@ -31,4 +31,6 @@ Jelaskan maksud dari week 4 ini
   3. dilanjutkan dengan perintah `nvm use 16` untuk menggunakan yang versi 16
   4. untuk mengecek apakah sudah terinstal dan melihat versi berapakah yang digunakan dengan cara `node -v` dan `npm -v`. Jika belum terdeteksi jalankan perintah `exec bash` 
 - Jika sudah terinstal sekarang kita mencoba membuat aplikasi sederhana menggunakan node.js
-  1. 
+  1. Membuat direktori untuk menyimpan aplikasi nodejs, kemudian msuk kedalam direktori tersebut dan jalankan perintah `npm init -y` yang berguna untuk inisiasi bahwa dalam program tersebut ada aplikasi nodejs
+  2. Kemudian install express untuk bisa menjalankan nodejs dengan perintah `npm install express --save` 
+  3. Lalu buat file index.js dan edit menggunakan `nano index.js` dan tuliskan code program yang ingin dijalankan. 
