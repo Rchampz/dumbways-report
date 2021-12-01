@@ -15,8 +15,8 @@
 - [Baca lebih lanjut](week-3/README.md)
 
 ## Minggu ke 4
-- Setup monitoring
-- Setup ansible & Membuat ansible playbook untuk konfigurasi server
+- Understand Application and linux server
+- Web server and load balancing
 - [Baca lebih lanjut](week-4/README.md)
 
 ## Additional
