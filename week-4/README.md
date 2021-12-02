@@ -34,25 +34,26 @@ Jelaskan maksud dari week 4 ini
   1. Membuat direktori untuk menyimpan aplikasi nodejs, kemudian msuk kedalam direktori tersebut dan jalankan perintah `npm init -y` yang berguna untuk inisiasi bahwa dalam program tersebut ada aplikasi nodejs
   2. Kemudian install express untuk bisa menjalankan nodejs dengan perintah `npm install express --save` Dokumentasi untuk expressjs lebiih lengkap [disini](https://expressjs.com/)
   3. Lalu buat file index.js dan edit menggunakan `nano index.js` dan tuliskan code program yang ingin dijalankan. Disini saya akan menjalankan code dibawah
-```
-const express = require('express')
-const app = express()
-const port = 3000
-const path = require('path');
-const router = express.Router();
+      ```
+      const express = require('express')
+      const app = express()
+      const port = 3000
+      const path = require('path');
+      const router = express.Router();
 
-router.get('/',function(req,res){
-  res.sendFile(path.join(__dirname+'/index.html'));
-  //__dirname : It will resolve to your project folder.
-});
+      router.get('/',function(req,res){
+        res.sendFile(path.join(__dirname+'/index.html'));
+        //__dirname : It will resolve to your project folder.
+      });
 
-app.use('/',router);
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
-```
-Code diatas digunakan untuk menjalankan index.html yang akan ditampilkan ketika localhost:3000 diakses via web browser. Kemudian save file index.js
-4. Setelah disave, jalankan perintah `node index.js` untuk menjalankan aplikasi yang sudah dibuat dan akan muncul string seperti berikut.
-5. Kemudian buka web browser dan akses `localhost:3000` untuk menampilkan aplikasi yang sudah dibuat dan diset ke port 3000 untuk bisa diakses
+      app.use('/',router);
+      app.listen(port, () => {
+        console.log(`Example app listening at http://localhost:${port}`)
+      })
+      ```
+      Code diatas digunakan untuk menjalankan index.html yang akan ditampilkan ketika              localhost:3000 diakses via web browser. Kemudian save file index.js
+
+  4. Setelah disave, jalankan perintah `node index.js` untuk menjalankan aplikasi yang sudah dibuat dan akan muncul string seperti berikut.
+  5. Kemudian buka web browser dan akses `localhost:3000` untuk menampilkan aplikasi yang sudah dibuat dan diset ke port 3000 untuk bisa diakses
 
 ### Python
