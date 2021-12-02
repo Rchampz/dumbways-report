@@ -85,15 +85,8 @@ Jelaskan maksud dari week 4 ini
    3. Kemudian install webframework untuk golang, disini saya menggunakan gin. Untuk lebih jelasnya mengenai gin dapat dilihat [disini](https://github.com/gin-gonic/gin). Untuk install gin dapat menggunakan perintah `$ go get -u github.com/gin-gonic/gin` 
 
 - Jika sudah sekarang membuat aplikasi sederhana
-   1. buat direktori dengan `mkdir myapp-go` dan buat file example.go dengan perintah `nano example.go`. Dalam penggunaan gin biasanya diawali dengan perintah
-      ```
-      package main
-
-      import "github.com/gin-gonic/gin"
-
-      func main() {
-      ```
-   2. Disini saya masih membuat aplikasi yang sama yaitu rendering html dalam file example.go code nya seperti
+   1. buat direktori dengan `mkdir myapp-go` dan buat file example.go dengan perintah `nano example.go`. Kemudian install gin dengan perintah `go mod init github.com/monkrus/gin-4` kemudian `go get github.com/gin-gonic/gin` setelah itu akan terbentuk 2 files yaitu go.mod dan go.sum yan merupakan hasil instalasi modules yang baru saj dipasang.
+   2. Disini masih membuat aplikasi yang sama yaitu rendering html dalam file example.go code nya seperti
       ```
       package main
 
@@ -101,9 +94,8 @@ Jelaskan maksud dari week 4 ini
 
       func main() {
          router := gin.Default()
-	      router.LoadHTMLGlob("templates/*.tmpl")
-	      //router.LoadHTMLFiles("templates/template1.html", "templates/template2.html")
-	      router.GET("/index", func(c *gin.Context) {
+	      router.LoadHTMLFiles("/template1.html")
+	      router.GET("/", func(c *gin.Context) {
 		      c.HTML(http.StatusOK, "index.tmpl", gin.H{
 			      "title": "Main website",
 		      })
@@ -111,4 +103,4 @@ Jelaskan maksud dari week 4 ini
 	   router.Run(":8080")
       }
       ```
-   Untuk dapat menjalankannya harus membuat direktori terlebih dahulu dalam myapp-go yang sudah dibuat sebelumnya yang bernama templates dengan `mkdir templates` dan didalam direktori templates dibuat file bernama index.tmpl yang berisikan code html yang mau dijalankan
+   Untuk dapat menjalankannya dibuat file index.html.
