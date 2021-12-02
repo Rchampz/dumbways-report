@@ -57,3 +57,24 @@ Jelaskan maksud dari week 4 ini
   5. Kemudian buka web browser dan akses `localhost:3000` untuk menampilkan aplikasi yang sudah dibuat dan diset ke port 3000 untuk bisa diakses
 
 ### Python
+- Instalasi dan konfigurasi
+   1. Lakukan update dan upgrade sistem dengan perintah `sudo apt update ; sudo apt upgrade` Jika sudah jalankan perintah `python3 -V` untuk mengecek versi yang sudah terinstall
+   2. Lakukan instalasi package manager dengan perintah `sudo apt install python3-pip`
+   3. Kemudian jalankan perintah `pip install flask` yang digunakan untuk menginstall flask. Flask sendiri adalah module pythone yang digunakan untuk web framework. Untuk dokumentasi lebih lengkap mengenai flask sendiri dapat dilihat [disini](https://pythonbasics.org/what-is-flask-python/)
+- Jika sudah terinstall maka kita buat aplikasi sederhana menggunakan python dan module flask
+   1. Buat direktori dengan `mkdir myapp-python` maka akan menbuat folder dengan nama myapp-python
+   2. kemudian buat file index.py dengan perintah `nano index.py` kemudian ketik code yang ingin dibuat. Dalam kasus ini saya menggunakan aplikasi untuk memuat isi dari index.html
+      ```
+      from flask import Flask, render_template
+      app = Flask(__name__)
+
+      @app.route("/")
+      def index():
+          return render_template('index.html')
+
+      if __name__ == '__main__':
+          app.run(host="localhost", port=8000, debug=True)
+      ```
+      Dengan catatan didalam folder yang kita buat tadi myapp-python terdapat folder templates ynag berisi index.html, jika tidak terdapat folder templates maka akan terjadi error ketika diakses.
+   3. Jika sudah maka jalankan perintah `python3 index.py` untuk menjalankan aplikasi yang telah dibuat.
+   4. Kemudian akses dengan web browser `localhost:8000` karena kita tadi menjalankan aplikasi di port 8000. Maka akan menghasilkan tampilan seperti
