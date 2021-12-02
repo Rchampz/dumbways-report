@@ -78,3 +78,37 @@ Jelaskan maksud dari week 4 ini
       Dengan catatan didalam folder yang kita buat tadi myapp-python terdapat folder templates ynag berisi index.html, jika tidak terdapat folder templates maka akan terjadi error ketika diakses.
    3. Jika sudah maka jalankan perintah `python3 index.py` untuk menjalankan aplikasi yang telah dibuat.
    4. Kemudian akses dengan web browser `localhost:8000` karena kita tadi menjalankan aplikasi di port 8000. Maka akan menghasilkan tampilan seperti
+## Golang
+- Instalasi
+   1. Install golang dengan perintah `sudo apt install go --clasic` setelah itu proses akan dilanjutkan mendownload dan extract resource. dan jika sudah akan muncul
+   2. Untuk mengecek apakah sudah terinstall dapat dicek dengan perintah `go version`
+   3. Kemudian install webframework untuk golang, disini saya menggunakan gin. Untuk lebih jelasnya mengenai gin dapat dilihat [disini](https://github.com/gin-gonic/gin). Untuk install gin dapat menggunakan perintah `$ go get -u github.com/gin-gonic/gin` 
+
+- Jika sudah sekarang membuat aplikasi sederhana
+   1. buat direktori dengan `mkdir myapp-go` dan buat file example.go dengan perintah `nano example.go`. Dalam penggunaan gin biasanya diawali dengan perintah
+      ```
+      package main
+
+      import "github.com/gin-gonic/gin"
+
+      func main() {
+      ```
+   2. Disini saya masih membuat aplikasi yang sama yaitu rendering html dalam file example.go code nya seperti
+      ```
+      package main
+
+      import "github.com/gin-gonic/gin"
+
+      func main() {
+         router := gin.Default()
+	      router.LoadHTMLGlob("templates/*.tmpl")
+	      //router.LoadHTMLFiles("templates/template1.html", "templates/template2.html")
+	      router.GET("/index", func(c *gin.Context) {
+		      c.HTML(http.StatusOK, "index.tmpl", gin.H{
+			      "title": "Main website",
+		      })
+	   })
+	   router.Run(":8080")
+      }
+      ```
+   Untuk dapat menjalankannya harus membuat direktori terlebih dahulu dalam myapp-go yang sudah dibuat sebelumnya yang bernama templates dengan `mkdir templates` dan didalam direktori templates dibuat file bernama index.tmpl yang berisikan code html yang mau dijalankan
