@@ -91,16 +91,64 @@ Jelaskan maksud dari week 4 ini
       package main
 
       import "github.com/gin-gonic/gin"
+      import "net/http"
 
       func main() {
          router := gin.Default()
-	      router.LoadHTMLFiles("/template1.html")
+	      router.LoadHTMLFiles("templates/cdindex.html")
 	      router.GET("/", func(c *gin.Context) {
-		      c.HTML(http.StatusOK, "index.tmpl", gin.H{
+		      c.HTML(http.StatusOK, "index.html", gin.H{
 			      "title": "Main website",
 		      })
 	   })
 	   router.Run(":8080")
       }
       ```
-   Untuk dapat menjalankannya dibuat file index.html.
+   Untuk dapat menjalankannya dibuat file index.html dan dalam direktori template.
+   3. Kemudian jalankan perintah `go run example.go` yang akan menjalan aplikasi go kedalam port 8080
+   4. dan untuk mengecek apakah berhasil buka web browser dan akses `localhost:8080`
+
+## Monitoring aplikasi dan mitigasi aplikasi
+   ### Case 
+   Sebuah aplikasi Nginx yang awalnya berjalan dengan normal tibatiba mati, Tuliskan langkah-langkah untuk mengecek apakah aplikasi tersebut mati dan cara untuk memulai kembali aplikasi tersebut
+   ### Langkah-langkah
+   1. Jalankan perintah `htop` dan cari apakah aplikasi berada dalam list atau tidak dengan perintah filter dengan menekan f11 dan cari nama aplikasinya yaitu Nginx. 
+   2. Jika terdapat aplikasi nginx berarti aplikasi sudah jalan namun belum bisa diakses
+   3. Sekarang coba cek aplikasi firewal dengan perintah `ufw app list` apakah terdapat aplikasi Nginx. Jika ada coba lagi untuk membuka port 80 apakah sudah bisa.
+   4. Jika Belum bisa diakses sekarang jalankan perintah `ufw status` untuk mengetahui apakah firewall aktif dan adakah aplikasi yang terblok
+   5. Dari perintah ufw status tadi menyatakan firewall aktif dan memblok aplikasi nginx. Untuk mengaktifkaan lagi aplikasi nginx berjalan digunakan perintah `ufw allow in "Nginx Full"`
+   6. Cek lagi status firewal dengan `ufw status`, jika aplikasi nginx yang awalnya deny sekarang sudah menjadi allow maka aplikasi sudah dapat dijalankan di port 80
+   7. Kemudian reload firewall dengan perintah `ufw reload` untuk mengaktifkan perubahan
+   8. Cek dengan web browser apakah sudah aktif, jika sudah langkah-langkah untuk mengecek dan mengaktifkan kembali aplikasi sudah berjalan.
+
+## Reverse Proxy
+### List aplikasi yang berjalan
+   1. NodeJS Port 3000
+   2. Python Port 8000
+   3. Golang Port 8080
+
+Langkah-Langkah
+1. Buka folder dimana nginx yang telah di install `cd /etc/nginx` dan buat direktori yang digunakan untuk menyimpan konfigurasi `sudo mkdir examples`
+2. Buka file nginx.conf dengan perintah `nano nginx.conf` dan tambahkan direktori yang kita buat tadi agar dideteksi oleh nginx
+3. Kemudian ubah permision dari folder yang telah dibuat menjadi user yang dipakai dengan perintah `sudo chown username:username examples` agar perintah yang akan dijalankan menjadi lebih ringkas tanpa menggunakan sudo
+4. Terus masuk kedalam folder example dan buat file yang akan dibuatkan reverse proxy. Disini ada 3 aplikasi maka akan dibuat 3 reverse proxy seperti
+   - NodeJS port 3000 | nodejs.rifai.xyz
+   - Python port 8000 | python.rifai.xyz
+   - Golang port 8080 | golang.rifai.xyz
+   Tiap file berisi code seperti
+   ```
+   server {
+         server_name nodejs.rifai.xyz;
+
+         location / {
+            proxy_pass http://127.0.0.1:3000;
+         }
+   }
+   ```
+   tiap blok dari blok `server_name` diisi dengan alamat yang diinginkan dan blok location `proxy_pass` diisi dengan port yang berjalan dari aplikasi. dan jalankan perintah `sudo nginx -t` untuk mengecek apakah konfigurasinya sudah benar  
+5. Setting virtual host dengan `sudo nano /etc/hosts`
+6. Jika sudah dimasukkan seperti Gambar diatas maka jalankan masing-masing aplikasi yang telah dibuat dan akses via host yang juga selesai dikonfigurasi
+   - Node.js
+   - Python
+   - Golang
+   
