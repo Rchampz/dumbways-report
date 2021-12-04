@@ -13,11 +13,11 @@ Jelaskan maksud dari week 4 ini
 
 # Penyelesaian
 1. [Dokumentasi pembuatan aplikasi dan konfigurasi dalam](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#dokumentasi-pembuatan-aplikasi-dan-konfigurasi)
-   - Node.js
-   - python
-   - golang
-2. Monitoring
-3. Reverse proxy
+   - [Node.js](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#node-js)
+   - [Python](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#python)
+   - [Golang](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#golang)
+2. [Monitoring](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#monitoring-aplikasi)
+3. [Reverse proxy](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#reverse-proxy)
 4. Load Balance Nginx
 
 # Jawaban
@@ -194,7 +194,7 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 </p>
 
 
-## Monitoring aplikasi dan mitigasi aplikasi
+## Monitoring aplikasi 
    ### Case 
    Sebuah aplikasi Nginx yang awalnya berjalan dengan normal tibatiba mati, Tuliskan langkah-langkah untuk mengecek apakah aplikasi tersebut mati dan cara untuk memulai kembali aplikasi tersebut
    ### Langkah-langkah
