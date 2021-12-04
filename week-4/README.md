@@ -12,7 +12,7 @@ Jelaskan maksud dari week 4 ini
 
 
 # Penyelesaian
-1. [Dokumentasi pembuatan aplikasi dan konfigurasi dalam](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#dokumentasi-pembuatan-aplikasi-dan-konfigurasi)
+1. [Dokumentasi pembuatan aplikasi dan konfigurasi](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#dokumentasi-pembuatan-aplikasi-dan-konfigurasi)
    - [Node.js](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#node-js)
    - [Python](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#python)
    - [Golang](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#golang)
@@ -22,7 +22,7 @@ Jelaskan maksud dari week 4 ini
 
 # Jawaban
 
-## 1. Dokumentasi pembuatan aplikasi dan konfigurasi
+## Dokumentasi pembuatan aplikasi dan konfigurasi
 ### Node Js
 - Instalasi node.js
   1. Dapat melihat di website nodejs.org atau langsung melalui terminal dengan perintah 
