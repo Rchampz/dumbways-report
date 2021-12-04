@@ -25,7 +25,10 @@ Jelaskan maksud dari week 4 ini
 ## 1. Dokumentasi pembuatan aplikasi dan konfigurasi
 ### Node Js
 - Instalasi node.js
-  1. Dapat melihat di website nodejs.org atau langsung melalui terminal dengan perintah `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash` 
+  1. Dapat melihat di website nodejs.org atau langsung melalui terminal dengan perintah 
+```
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+``` 
 <p align="center">
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-4/assets/nodejs1.jpg" />
 </p>
