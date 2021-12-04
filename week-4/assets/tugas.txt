@@ -1,0 +1,11 @@
+1. Buat dokumentasi
+- aplikasi node js
+- aplikasi python
+- aplikasi golang
+
+2. Buat monitoring 
+- bagaimana cara ngecek aplikasi hidup/mati
+
+3.tiap aplikasi buat reverse proxy (namaaplikasi.rifai.xyz)
+
+4.load balance nginx dokumentasi dan implementasi
