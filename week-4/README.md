@@ -240,9 +240,9 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 ## Reverse Proxy
 ### List aplikasi yang berjalan
-   1. NodeJS Port 3000
-   2. Python Port 8000
-   3. Golang Port 8080
+1. NodeJS Port 3000
+2. Python Port 8000
+3. Golang Port 8080
 
 Langkah-Langkah
 1. Buka folder dimana nginx yang telah di install `cd /etc/nginx` dan buat direktori yang digunakan untuk menyimpan konfigurasi `sudo mkdir examples`
