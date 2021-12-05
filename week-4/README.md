@@ -317,7 +317,7 @@ Metode yang mendistribusikan trafik ke server yang sama ketika visitor pertama k
 CONTOH PENERAPAN:
 KONDISI :
 1. Terdapat 3 server yang masing-masing merupakan aplikasi yang telah dibuat sebelumnya
-    - Server1 : Nodejs : Port 3000
+    - Server utama : Nodejs : Port 3000
     - Server2 : Python : Port 8000
     - Server3 : Golang : Port 8080
 2. Masing masing server berisikan file ekstensi .html yang berisi 
@@ -353,5 +353,22 @@ KONDISI :
   sudo nginx -t
   sudo systemctl reload nginx 
   ```
+  <p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-4/assets/loadbalance3.jpg" />
+  </p>
+  
   
 4. Untuk mencoba, buka web browser dan akses ke loadbalance.xyz kemudian lakukan refresh page berulang dan akan mendapatkan hasil berupa server akan pindah namun alamat akses masih sama.
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-4/assets/loadbalance4.1.jpg" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-4/assets/loadbalance4.2.jpg" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-4/assets/loadbalance4.3.jpg" />
+</p>
+
+5. Jika masih ingin mengetahui lebih dalam mengenai load balancer nginx dapat dilihat di https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/
