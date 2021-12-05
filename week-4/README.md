@@ -305,7 +305,7 @@ Proses load balancing adalah gabungan dari proses Reverse Proxy untuk multiple b
 ### Beberapa cara atau metode yang dapat digunakan dalam Nginx sebagai Load balancer
 
 1. Round Robin
-Round Robin merupakan default method. JIka parameter load balancer tidak ditentukan, maka sudah otomatis method yang digunakan adalah Round Robin. Metode Round Robin adalah mendistribusikan trafik ke setiap server secara bergantian.
+merupakan default method. JIka parameter load balancer tidak ditentukan, maka sudah otomatis method yang digunakan adalah Round Robin. Metode Round Robin adalah mendistribusikan trafik ke setiap server secara bergantian.
 2. Least Connection
 Metode yang mendistribusikan trafik ke server yang paling sedikit koneksi aktifnya.
 3. IP Hash
