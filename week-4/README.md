@@ -303,9 +303,6 @@ Langkah-Langkah
 ## Load Balance Nginx
 Proses load balancing adalah gabungan dari proses Reverse Proxy untuk multiple backend ditambah dengan kemampuan Health Check Nginx terhadap backend server. Nginx akan selalu mengecek ke backend-nya, server backend mana yang terpantau loadnya lebih ringan, dia akan segera diberikan beban akses selanjutnya. Dengan demikian diharapkan beban proses akan merata di seluruh backend server.
 ### Beberapa cara atau metode yang dapat digunakan dalam Nginx sebagai Load balancer
-   1. Round Robin
-   2. Least Connection
-   3. IP Hash
 
 1. Round Robin
 Round Robin merupakan default method. JIka parameter load balancer tidak ditentukan, maka sudah otomatis method yang digunakan adalah Round Robin. Metode Round Robin adalah mendistribusikan trafik ke setiap server secara bergantian.
