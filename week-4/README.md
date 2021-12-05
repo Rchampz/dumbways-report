@@ -119,13 +119,13 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
       app = Flask(__name__)
 
       @app.route("/")
-      def index():
+      def index():cd ..
           return render_template('index.html')
 
       if __name__ == '__main__':
           app.run(host="localhost", port=8000, debug=True)
       ```
-      Dengan catatan didalam folder yang kita buat tadi myapp-python terdapat folder templates ynag berisi index.html, jika tidak terdapat folder templates maka akan terjadi error ketika diakses.
+      Dengan catatan didalam folder yang kita buat tadi myapp-python terdapat folder templates yg berisi index.html, jika tidak terdapat folder templates maka akan terjadi error ketika diakses.
 <p align="center">
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-4/assets/appp2.jpg" />
 </p>
@@ -299,3 +299,59 @@ Langkah-Langkah
 <p align="center">
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/week-4/assets/reverseproxygolang.jpg" />
 </p>
+
+## Load Balance Nginx
+Proses load balancing adalah gabungan dari proses Reverse Proxy untuk multiple backend ditambah dengan kemampuan Health Check Nginx terhadap backend server. Nginx akan selalu mengecek ke backend-nya, server backend mana yang terpantau loadnya lebih ringan, dia akan segera diberikan beban akses selanjutnya. Dengan demikian diharapkan beban proses akan merata di seluruh backend server.
+### Beberapa cara atau metode yang dapat digunakan dalam Nginx sebagai Load balancer
+    1. Round Robin
+    2. Least Connection
+    3. IP Hash
+
+1. Round Robin
+Round Robin merupakan default method. JIka parameter load balancer tidak ditentukan, maka sudah otomatis method yang digunakan adalah Round Robin. Metode Round Robin adalah mendistribusikan trafik ke setiap server secara bergantian.
+2. Least Connection
+Metode yang mendistribusikan trafik ke server yang paling sedikit koneksi aktifnya.
+3. IP Hash
+Metode yang mendistribusikan trafik ke server yang sama ketika visitor pertama kali melakukan request.
+
+CONTOH PENERAPAN:
+KONDISI :
+1. Terdapat 3 server yang masing-masing merupakan aplikasi yang telah dibuat sebelumnya
+    - Server1 : Nodejs : Port 3000
+    - Server2 : Python : Port 8000
+    - Server3 : Golang : Port 8080
+2. Masing masing server berisikan file ekstensi .html yang berisi 
+    - port 3000 : ` <h1> Server utama</h1>`
+    - port 8000 : ` <h1> Server 2 </h1>`
+    - port 8080 : ` <h1> Server 3 </h1>`
+3. Buat file dalam folder `/etc/nginx/examples/` 
+  ```
+  nano /etc/nginx/examples/loadbalance.xyz
+  ```
+
+  ```
+  upstream lb_examples {
+        # Tanpa diisi otomatis menggunakan round robin
+        # jika diisi dengan (least_conn;) maka menggunakan methode least connection
+        # jika diisi (ip_hash;) maka akan menggunakan methode ip hash
+        server 127.0.0.1:3000 max_conns=1;
+        server 127.0.0.1:8000 max_conns=1;
+        server 127.0.0.1:8080;
+  }
+
+  server{
+        listen 80;
+        server_name loadbalance.xyz;
+
+        location / {
+        proxy_pass http://lb_examples/;
+        }
+  }
+  ```
+  Jika sudah jalankan perintah 
+  ```
+  sudo nginx -t
+  sudo systemctl reload nginx 
+  ```
+  
+4. Untuk mencoba, buka web browser dan akses ke loadbalance.xyz kemudian lakukan refresh page berulang dan akan mendapatkan hasil berupa server akan pindah namun alamat akses masih sama.
