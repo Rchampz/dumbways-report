@@ -18,7 +18,7 @@ Jelaskan maksud dari week 4 ini
    - [Golang](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#golang)
 2. [Monitoring](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#monitoring-aplikasi)
 3. [Reverse proxy](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#reverse-proxy)
-4. Load Balance Nginx
+4. [Load Balance Nginx](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#load-balance-nginx)
 
 # Jawaban
 
