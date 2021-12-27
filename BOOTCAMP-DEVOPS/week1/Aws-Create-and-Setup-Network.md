@@ -45,9 +45,29 @@ Langkah langkahnya sama dengan membuat server untuk reverse proxy. Disini akan m
 ```
 git clone https://github.com/sgnd/dumbflix-frontend
 ```
-3. Kemudian install nodeJs dapat dilihat [disini](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#node-js). DIsini mengggunakan Nodejs versi 10 sesuai petunjuk dari aplikasi dumbflix, dan jika sudah terinstall jalankan perintah
+3. Kemudian install nodeJs dapat dilihat [disini](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#node-js). Disini mengggunakan Nodejs versi 10 sesuai petunjuk dari aplikasi dumbflix, dan jika sudah terinstall jalankan perintah
 ```
 nvm -v
 npm -v
+npm install
 ```
+4. Kemudian jalankan aplikasi dengan perintah 
+```
+npm start
+```
+Jika sudah berjalan coba akses via web browser dengan `alamatIPserver:3000` jika berhasil maka akan muncul aplikasi dumbflix
 
+5. Sekarang, untuk menjalankannya di backgorund dibutuhkan pm2, install dengan perintah
+```
+npm install pm2 -g
+```
+kemudian inisiasi pm2 dengan `pm2 init simple` dan akan terbentuk file ecosystem.config.js. Edit dengan perintah `nano cosystem.config.js` dan tambahkan aplikasi Dumbflix
+
+6. jalankan aplikasi melalui pm2 dengan 
+```
+pm2 start
+```
+7. jika sudah coba akses aplikasi, dan jika berhasil maka akan muncul aplikasi di web browser
+8. Kembali ke EC2 AWSconsole, pilih server yang digunakan untuk menjalankan aplikasi dan cabut elstic IPs dari server tersebut. Ini bertujuan untuk mengamankan aplikasi agar tidak dapat diakses secara langsung. Akses aplikasi akan melalui reverse proxy Nginx yang dibuat sebelumnya. 
+
+Coba cek di instance, dan jika sudah dicabut Elastic IPs-nya maka IP public tidak akan muncul yang menandakan server application hanya bisa diakses via IP private
