@@ -1,0 +1,7 @@
+-Buat 2 Server
+gateaway nginx
+frontend dumbflix
+nama.onlinecamp.id
+-certbot htpps
+-VMWare(dumbflix.xyz)
+

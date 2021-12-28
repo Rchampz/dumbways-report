@@ -1,0 +1,51 @@
+Devops adalah kultur dari sebuah perusahaan yang dalam fungsinya untuk mengotomatisasikan
+tim pengembang dengan team operasional
+
+Cara kerja Devops
+- Continous Integration (Versioning) (GIT)
+- Continous Delivery (Testing)
+- Continous Deployment (Production)
+- Configuration management (BASH)
+- ansible (infrasturctur as acode)
+- monitoring (Promentheus)
+- logging (ELK Stack)
+- Communication
+
+Perintah-perintah
+mkdir <nama direktori> = membuat direktori
+cd = change directory = menuju direktori
+ls = list = untuk melihat isi dari terminal
+cat = melihat isi file
+cp <namafileygdikopi> <namafilebarutujuan>= copy = menduplikat file/direktori
+mv <fileawal> <lokasiakandipindah> = move = memindahkan file/direktori juga bisa untuk merename
+rm = remove = menghapus file
+touch "namafile' = membuat file
+find <kataygmaudicari>=  mencari file/direktori
+grep <kataygdicari> <tempatfilekataygdicari>= mencari kata dalam file
+sudo = super user do = melakukan perintah dibawah user
+df = melihat jumlah memori yang digunakan
+chmod = mengganti permission dari file/direktori
+chown <namauser:namauser> <namafile/direktori> = change owner = mengubah owner dari user1 ke user lain
+kill <-9><ID app>  = mematikan program atau aplikasi
+ping = mengecek koneksi
+wget = mendownload file
+hisory = melihat riwayat perintah yang pernah dijalankan sebelumnya
+adduser = menambahkan sebuah user
+
+IP (class A untuk private/class B/Class C)(lokal/public)(statis/dinamis)= address atau alamat yang unique untuk masing-masing user
+
+
+STEP-STEP
+1. Install VMWare
+2. Download iso Ubuntu server
+3. Pilih new
+4. Masukkan ISO yang sudah didwonload kemudian NEXT
+5. Isi personalize vietual machine (nama, dan pass)
+6. Pilih Lokasi akan dimana Virtualmachine akan disimpan
+7. Kemudian NEXT
+8. Setting memori dan Ram yang akan digunakan
+9. Tunggu sampai proses instalasi selesai
+10. Selesaikan instalasi dan pilih DONE
+11. Jika sudah selesai lakukan reboot atau restart
+12. masukkan user dan pass yang sebelumnya sudah dibuat
+
