@@ -19,11 +19,3 @@
 - Web server and load balancing
 - [Baca lebih lanjut](week-4/README.md)
 
-## Additional
-- Setup container orchestration
-- Setup microservices application
-- [Baca lebih lanjut](week-1/README.md)
-
-## Final
-- Final examination
-- [Baca lebih lanjut](final/README.md)
