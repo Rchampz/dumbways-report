@@ -1,5 +1,5 @@
 # TASK!
-1. Install git and SSH Key
+1. Install Git and SSH Key
 2. Setup Database
 3. Deployment backend
 4. Reverse proxy

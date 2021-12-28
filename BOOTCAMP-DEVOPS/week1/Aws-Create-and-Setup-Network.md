@@ -1,8 +1,7 @@
 # Aws Create and Setup Network
 
-## Step by step Membuat AWS Visrtual machine dan konfigurasinya
+### Step by step Membuat AWS Visrtual machine dan konfigurasinya
 
-### Reverse proxy server
 
 1. Membuka website `console.aws.amazon.com/console`. Dan kemudian pilih `lunch a virtual machine`
 2. Akan diarahkan menuju `Step 1: Choose an Amazon Machine Image (AMI)` dan search for ubuntu dikolom search, select Ubuntu server 20.04 LTS
@@ -30,44 +29,9 @@ dan akan muncul perintah seperti dibawah, dan ketik `yes`
 sudo apt upgrade
 sudo apt update
 ```
-14. Untuk menggunakan reverse proxy disini menggunakan Nginx. Instal terlebih dahulu Nginx
-```
-sudo apt install nginx
-```
-Kemudian cek apakah sudah berhasil dengan mengakses ke `IPaddreesserver:80` yang mana akan mengakses port 80 pada server yang telah dibuat
 
-### Application server
-Langkah langkahnya sama dengan membuat server untuk reverse proxy. Disini akan menggunakan aplikasi dumbflix (https://github.com/sgnd/dumbflix-frontend)
+### Login server with password
+1. `sudo adduser <namauser>`
+2. `sudo usermod -aG sudo <namauser>`
+3. `sudo nano /etc/ssh/sshd_config` dan uncomment `PubkeyAuthentication` kemudian ubah `PasswordAuthentication` dari `no` menjadi `yes`
 
-1. Pada `Step 6: Configure Security Group` pilih rules `all trafic` yang digunakan untuk membuka semua port
-
-2. Jika sudah selesai, setting elastic IPs untuk sementara guna mendownload aplikasi dumbflix dan menginstall kebutuhan untuk menjalankan aplikasi dumbflix tersebut yaitu nodejs
-```
-git clone https://github.com/sgnd/dumbflix-frontend
-```
-3. Kemudian install nodeJs dapat dilihat [disini](https://github.com/rifaicham/dumbways-report/blob/main/week-4/README.md#node-js). Disini mengggunakan Nodejs versi 10 sesuai petunjuk dari aplikasi dumbflix, dan jika sudah terinstall jalankan perintah
-```
-nvm -v
-npm -v
-npm install
-```
-4. Kemudian jalankan aplikasi dengan perintah 
-```
-npm start
-```
-Jika sudah berjalan coba akses via web browser dengan `alamatIPserver:3000` jika berhasil maka akan muncul aplikasi dumbflix
-
-5. Sekarang, untuk menjalankannya di backgorund dibutuhkan pm2, install dengan perintah
-```
-npm install pm2 -g
-```
-kemudian inisiasi pm2 dengan `pm2 init simple` dan akan terbentuk file ecosystem.config.js. Edit dengan perintah `nano cosystem.config.js` dan tambahkan aplikasi Dumbflix
-
-6. jalankan aplikasi melalui pm2 dengan 
-```
-pm2 start
-```
-7. jika sudah coba akses aplikasi, dan jika berhasil maka akan muncul aplikasi di web browser
-8. Kembali ke EC2 AWSconsole, pilih server yang digunakan untuk menjalankan aplikasi dan cabut elstic IPs dari server tersebut. Ini bertujuan untuk mengamankan aplikasi agar tidak dapat diakses secara langsung. Akses aplikasi akan melalui reverse proxy Nginx yang dibuat sebelumnya. 
-
-Coba cek di instance, dan jika sudah dicabut Elastic IPs-nya maka IP public tidak akan muncul yang menandakan server application hanya bisa diakses via IP private
