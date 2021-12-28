@@ -59,58 +59,58 @@ dan akan menuju ke pilihan layout keyboard yang akan digunakan.
 
     - Jika ingin mengeset agar IP static bisa dalam menu IPv4 Method.
     <p align="center">
-    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.1.jpg" />
-</p>
+        <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.1.jpg" />
+    </p>
 
     - proxy addrees bisa dilewati.
     <p align="center">
-    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.2.jpg" />
-</p>
+        <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.2.jpg" />
+    </p>
 
     - mirror addrees juga dibiarkan default.
     <p align="center">
-    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.3.jpg" />
-</p>
+        <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.3.jpg" />
+    </p>
 
     - Storage configuration, pilih use an entire disk yang akan menggunakan seluruh alokasi Swap memori yang telah diset sebelumnya.
     <p align="center">
-    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.4.jpg" />
-</p>
+        <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.4.jpg" />
+    </p>
 
     - AKan ada summary dari storage yang digunakan, pilih done
     <p align="center">
-    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.5.jpg" />
-</p>
+        <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.5.jpg" />
+    </p>
 
     - dan akan memunculkan notifikasi untuk melanjutkan proses instalasi. pilih continue
     <p align="center">
-    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.6.jpg" />
-</p>
+        <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.6.jpg" />
+    </p>
 
     - dilanjutkan dengan mengisi nama, username dan password.
     <p align="center">
-    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.7.jpg" />
-</p>
+        <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.7.jpg" />
+    </p>
 
     - SSH setup bisa dilewati.
     <p align="center">
-    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.8.jpg" />
-</p>
+        <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.8.jpg" />
+    </p>
 
     - Pilih aplikasi yang akan diinstal bersamaan dengan server dibuat. jika tidak ada pilih done
     <p align="center">
-    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.9.jpg" />
-</p>
+        <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.9.jpg" />
+    </p>
 
     - Proses instalasi akan berjalan
     <p align="center">
-    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.10.jpg" />
-</p>
+        <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.10.jpg" />
+    </p>
 
     - Ketika sudah selesai akan munjul perintah reboot now
     <p align="center">
-    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.11.jpg" />
-</p>
+        <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/wmware10.11.jpg" />
+    </p>
 
 
 11. Ketika selesai proses reboot masukkan username dan password. Dan sekarang server sudah selesai dibuat
