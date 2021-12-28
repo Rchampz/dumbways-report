@@ -26,9 +26,6 @@ mkdir .clodflare
 </p>
 
 5. Jalankan perintah `sudo chmod 400 api.key` agar api key dapat diakses
-<p align="center">
-  <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/ssl5.jpg" />
-</p>
 
 6. Lakukan instalasi certbot
     - Jalankan perintah 
