@@ -35,4 +35,4 @@ mkdir .clodflare
   <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/ssl6.jpg" />
 </p>
 
-7. 
+7. Jalankan perintah `sudo certbot` untuk mendapatkan autentifikasi. namun jika muncul error seperti ini tandanya kita sudah terlalu banyak menggunakan certbot. solusinya tunggu sampai bisa melakukan autentifikasi kembali atau dengan membuat ssl dengan yg lain. 
