@@ -37,7 +37,7 @@ Jika sudah berjalan coba akses via web browser dengan `alamatIPserver:3000` jika
 ```
 npm install pm2 -g
 ```
-kemudian inisiasi pm2 dengan `pm2 init simple` dan akan terbentuk file ecosystem.config.js. Edit dengan perintah `nano cosystem.config.js` dan tambahkan aplikasi Dumbflix
+kemudian inisiasi pm2 dengan `pm2 init simple` dan akan terbentuk file ecosystem.config.js. Edit dengan perintah `nano ecosystem.config.js` dan tambahkan aplikasi Dumbflix
 <p align="center">
     <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week1/assets/awscreateapp5.jpg" />
 </p>
