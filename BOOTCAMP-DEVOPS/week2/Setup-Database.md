@@ -82,12 +82,12 @@ Konfigurasi mysql
     - `FLUSH PRIVILEGES;`
     - Setelah semua dijalankan sekarang `exit;` dari cli mysql dan coba akses mysql tanpa sudo dengan perintah `mysql -u root -p` 
 <p align="center">
-    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week2/assets/remotedatabase4.jpg" />
+    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week2/assets/remotedata6.jpg" />
 </p>
 
 7. Jalankan perintah `show databases;` untuk melihat database yang telah dibuat
 <p align="center">
-    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week2/assets/remotedata6.jpg" />
+    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week2/assets/remotedata7.jpg" />
 </p>
 
 ### 4. Setup security grup with private IP
