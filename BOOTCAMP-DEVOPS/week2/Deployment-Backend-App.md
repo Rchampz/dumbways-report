@@ -7,10 +7,17 @@
 
 ### 1. Clone repository
 1. Akses server backend
+<p align="center">
+    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week2/assets/clonerepo1.jpg" />
+</p>
+
 2. Clone repository
     ```
     git clone https://github.com/sgnd/dumbflix-backend.git
     ```
+<p align="center">
+    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week2/assets/clonerepo2.jpg" />
+</p>
 
 ### 2. Change directory backend and deploy the application
 1. Install Aplikasi nodeJS
@@ -28,6 +35,10 @@
     cd config
     sudo nano config.json
     ```
+<p align="center">
+    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week2/assets/dirback4.jpg" />
+</p>
+
 5. - Install pm2 untuk deploy backend
     ```
     npm install pm2 -g
@@ -36,6 +47,9 @@
 
     nano ecosystem.config.js
     ```
+<p align="center">
+    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week2/assets/deploy2.jpg" />
+</p>
     - Deploy aplikasi backend dengan perintah
         ```
         pm2 start
@@ -48,8 +62,14 @@
 npm install --save-dev -g sequelize-cli
 ```
 2. Jalankan perintah `sequelize db:migrate` guna melakukan migrate ke database yang telah dibuat
+<p align="center">
+    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week2/assets/seq1.jpg" />
+</p>
 
 3. Kembali ke database
     - Masuk ke server database dan akses mysql dengan perintah `mysql -u <username> -p`. 
     - Jalankan perintah `show databases;` untuk menampilkan database yang telah dibuat
     - kemudian perintah `use dumbflix` untuk menampilkan data yg telah di migrate dari server backend dan `show tables;`
+<p align="center">
+    <img src="https://github.com/rifaicham/dumbways-report/blob/main/BOOTCAMP-DEVOPS/week2/assets/seq3.jpg" />
+</p>
