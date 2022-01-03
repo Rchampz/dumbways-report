@@ -3,6 +3,9 @@
 1. clone aplikasi yang akan dibuatkan images-nya. 
 - `git clone https://github.com/sgnd/dumbflix-frontend`
 - `git clone https://github.com/sgnd/dumbflix-backend`
+<p align="center">
+    <img src="assets\gitclone.jpg" />
+</p>
 
 2. Masuk kedalam direktori aplikasi dumbflix yang sudah didownload. Kemudian buat file Dockerfile
 ```
