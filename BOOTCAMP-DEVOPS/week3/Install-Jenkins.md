@@ -27,5 +27,11 @@
     ```
  - kemudian jalankan perintah `docker-compose up -d` untuk menjalankan dockercompose
  - jika sudah jalankan perintah `sudo logs myjenkins` dan cari password authentication
+<p align="center">
+    <img src="assets\installjenkinspass.jpg" />
+</p>
+<p align="center">
+    <img src="assets\installjenkinshasil.jpg" />
+</p>
 
 # Reverse proxy

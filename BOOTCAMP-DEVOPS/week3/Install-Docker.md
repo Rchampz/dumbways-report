@@ -13,7 +13,6 @@ sudo apt  install docker.io  # version 20.10.7-0ubuntu5~20.04.2
     <img src="assets\dockerinstall.jpg" />
 </p>
 
-
 2. Jika sudah terinstal login kedalam docker dengan perintah `docker login` namun jika terdapat error seperti `Got permission denied` seprti pada gambar dibawah. ada beberapa solusi. pertama gunakan `sudo` yang kedua jalankan perintah 
 ```
 sudo groupadd docker

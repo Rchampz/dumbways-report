@@ -7,12 +7,23 @@
 sudo docker run -itd --name frontend -p 1001:3000 frontend:1
 ```
 - Jika sudah jalankan perintah `docker container ls -a` untuk melihat apakah container berhasil terbuat
+<p align="center">
+    <img src="assets\containerapp.jpg" />
+</p>
 
 2. Untuk aplikasi backend
 - Jalankan perintah
 ```
 sudo docker run -itd --name frontend -p 1002:5000 backend:1
 ```
+<p align="center">
+    <img src="assets\containerapp2.jpg" />
+</p>
+
+3. akses kedua aplikasi via web-browser
+<p align="center">
+    <img src="assets\containerapp3.jpg" />
+</p>
 
 ## Menjalankan aplikasi dengan docker-compose
 
@@ -43,6 +54,9 @@ services:
     sudo docker-compose up -d
     ```
 maka akan muncul seperti dibawah. dan cek menggunakan `sudo docker ps` untuk melihat container berjalan. 
+<p align="center">
+    <img src="assets\dockercomposeapp.jpg" />
+</p>
 
 ### kondisi 2 jika belum ada images aplikasi harus menggunakan build
 ```
