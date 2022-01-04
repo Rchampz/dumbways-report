@@ -20,5 +20,18 @@
 <p align="center">
     <img src="assets\publishoverssh.jpg" />
 </p>
+
   - kembali ke dashborad dan pilih Manage Jenkins > Configure System
   - cari public over SSH, biasanya terletak paling bawah karena baru saja kita install
+  - masukkan kembali key yang sebelumnya diGit kedalam
+  - pilih ssh server dan masuukan nama, host(IP/alamat dari aplikasi kita yg akan dicreate jobnya, terus username)
+  - pilih save
+
+- Kembali ke dashboard Jenkins dan pilih new item di kiri atas atau ppilih create a job
+- kemudian masukkan nama job secara spesifik dan pilih freestyle-project 
+- akan muncul banyak pilihan setting, cari source code management, pilih git dan masukkan url/ssh dari repository aplikasi yang akan dibuat jobnya 
+- Kemudian pada kolom build trigger pilih `GitHub hook trigger for GITScm polling` dan sekarang buka repository melalui webbrowser, pilih setting dan webhook. Masukkan alamat dari jenkins kita dan centang active dan klik add webhook
+- Pilih option build   `execute over SSH` kemudian isikan souce dan perintah untuk menjalankan aplikasi via server dan kemudian save.
+- lakukan perubahan pada repository melalui server, dan lakukan push kedalam github. setelah itu cek kembali kedalam jenkins dan tunggu sampai proses build diJenkins selesai.
+
+2. Menghubungkan dengan docker 

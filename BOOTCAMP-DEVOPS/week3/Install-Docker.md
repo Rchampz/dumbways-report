@@ -6,7 +6,7 @@
 - Jika sudah jalankan perintah berikut untuk instalasi docker`sudo apt-get install docker-ce docker-ce-cli containerd.io`
 ```
 sudo snap install docker     # version 20.10.8, or
-sudo apt  install docker.io  # version 20.10.7-0ubuntu5~20.04.2
+sudo apt install docker.io  # version 20.10.7-0ubuntu5~20.04.2
 ```
 - Jika proses sudah selesai, bisa dijalankan perintah `docker version` untuk melihat versi dari docker yang diinstall
 <p align="center">
