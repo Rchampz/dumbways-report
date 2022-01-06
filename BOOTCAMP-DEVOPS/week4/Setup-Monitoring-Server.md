@@ -51,7 +51,7 @@ sudo systemctl enable node_exporter
 ```
 sudo systemctl enable node_exporter
 ```
-8. Buka web browser dan akses di `http://<alamatIP>:9001`
+8. Buka web browser dan akses di `http://<alamatIP>:9100`
 
 ### Install Prometheus
 1. Download prometheus terlebih dahulu. untuk versi lebih lengkapnya bisa dilihat diwebsite prometheus.io
