@@ -129,10 +129,30 @@ sudo useradd -rs /bin/false prometheus
 sudo chown prometheus:prometheus /etc/prometheus
 sudo chown prometheus:prometheus /var/lib/prometheus
 ```
-### Menghubungkan server lain ke server monitoring
-1. Install node_exporter di server yang akan dimonitoring
-2. Jika sudah terinstall tambahkan alamat server kedalam file prometheus.yml
-3. kemudian restart aplikasi prometheus
-dan buka web browser, pilih targets dan dapat dilihat apakah sudah terkoneksi atau belum
 
 ### Install Grafana
+1. `sudo apt-get install -y apt-transport-https`
+2. `sudo apt-get install -y software-properties-common wget`
+3. `wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -`
+4. `echo "deb https://packages.grafana.com/enterprise/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list`
+5. `sudo apt-get update`
+6. `sudo apt-get install grafana-enterprise`
+7. `sudo systemctl daemon-reload`
+8. `sudo systemctl start grafana-server`
+9. `sudo systemctl status grafana-server`
+10. `sudo systemctl enable grafana-server.service`
+11. Setelah proses instalasi selesai, untuk mengamankan grafana agar tidak setiap orang bisa masuk dapat menggunakan perintah
+```
+sudo nano /etc/grafana/grafana.ini
+```
+kemudian ubah pada blok `[user]` dan blok `[auth_anonymous]`
+```
+[users]
+# disable user signup / registration
+allow_sign_up = false
+[auth.anonymous]
+# disable anonymous access
+enabled = false
+```
+12. jika sudah restart grafana `sudo systemctl restart grafana-server`
+13. akses di web browser, `<alamatIP>:3000` akan muncul tampilan pertamakali grafana dan masukkan `admin/pass:admin` untuk masuk pertama kali
