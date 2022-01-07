@@ -277,3 +277,51 @@ setup-jenkins.yml
       args:
         executable: /bin/bash 
 ```
+
+6. Setup-Apps
+- Buat file docker-compose untuk apps `docker-compose-apps.yml` dalam  direktory `files` 
+```
+version: '3'
+
+services:
+
+ frontend:
+  container_name: frontend
+  image: rifaicham/dumbflix-frontend
+  stdin_open: true
+  ports:
+   - 2001:3000
+
+ backend:
+  container_name: backend
+  image: rifaicham/dumbflix-backend
+  stdin_open: false
+  ports:
+   - 2002:5000
+```
+- Buat file ansible-playbook dan copy files docker-compose yang sebelumnya dibuat
+```
+setup-apps.yml
+---
+- name: Setup-Aplikasi-Frontend-Backend
+  hosts: app
+  become: true
+  tasks:
+    - name: Copy docker compose
+      copy:
+        src: docker-compose-apps.yml 
+        dest: /home/ubuntu/
+    - name: Docker pull frontend
+      shell: docker pull rifaicham/dumbflix-frontend
+      args:
+        executable: /bin/bash
+    - name: Docker pull backend
+      shell: docker pull rifaicham/dumbflix-backend
+      args:
+        executable: /bin/bash
+    - name: Install dumbflix
+      shell:"docker-compose -f docker-compose-apps.yml up -d"
+      args:
+        executable: /bin/bash
+```
+- Jalankan dengan perintah `sudo ansible-playbook setup-apps.yml`

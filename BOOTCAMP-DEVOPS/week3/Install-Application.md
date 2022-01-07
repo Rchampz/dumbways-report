@@ -37,14 +37,14 @@ services:
 
  frontend:
   container_name: frontend1
-  image: frontend:1
+  image: rifaicham/dumbflix-frontend
   stdin_open: true
   ports:
    - 2001:3000
 
  backend:
   container_name: backend1
-  image: backend:1
+  image: rifaicham/dumbflix-backend
   stdin_open: false
   ports:
    - 2002:5000
@@ -65,17 +65,18 @@ version: '3'
 services:
 
  frontend:
-  container_name: frontend1
+  container_name: frontend
   build: ./dumbflix-frontend # letak dimana berkas dockerfile
   stdin_open: true
   ports:
    - 1001:3000
 
  backend:
-  container_name: backend1
+  container_name: backend
   build: ./dumbflix-backend
   stdin_open: false
   ports:
+   - 1002:5000
 
 ```
 
