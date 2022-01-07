@@ -238,5 +238,42 @@ prometheus-grafana-compose.yml
         executable: /bin/bash   
 ```
 
-5. Setup-app
-- 
+5. Setup-Jenkins
+
+- Buat file docker-compose untuk instalasi jenkins didalam direktory `files`, karena disini kita akan menginstall versi docker
+```
+docker-compose-jenkins.yml
+---
+version: '3.9'
+services:
+  jenkins:
+    image: jenkins/jenkins:lts-jdk11
+    ports:
+      - 8080:8080
+      - 50000:50000
+    privileged: true
+    user: root
+    container_name: jenkins
+    volumes:
+      - ~/jenkins:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/local/bin/docker:/usr/local/bin/docker   
+```
+- Kemudian buat file ansible-playbook yang berisi perintah untuk instalasi jenkins pada server cicd
+```
+setup-jenkins.yml
+---
+- name: Setup Jenkins Docker
+  hosts: app
+  become: true
+  tasks:
+    - name: Copy docker compose
+      copy:
+        src: docker-compose-jenkins.yml
+        dest: /home/ubuntu/
+
+    - name: Run docker compose
+      shell: "docker-compose -f docker-compose-jenkins.yml up -d"
+      args:
+        executable: /bin/bash 
+```
