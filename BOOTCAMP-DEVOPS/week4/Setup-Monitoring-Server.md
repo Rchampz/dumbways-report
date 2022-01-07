@@ -58,7 +58,7 @@ sudo systemctl enable node_exporter
 ```
 wget https://github.com/prometheus/prometheus/releases/download/v2.32.1/prometheus-2.32.1.linux-amd64.tar.gz
 ```
-2. Kemudia ekstrak prometheusnya
+2. Kemudian ekstrak prometheusnya
 ```
 tar xvf prometheus-2.32.1.linux-amd64.tar.gz
 ```
