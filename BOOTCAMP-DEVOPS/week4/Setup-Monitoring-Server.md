@@ -51,7 +51,14 @@ sudo systemctl enable node_exporter
 ```
 sudo systemctl enable node_exporter
 ```
+<p align="center">
+    <img src="assets\nodeexporter.status.jpg" />
+</p>
+
 8. Buka web browser dan akses di `http://<alamatIP>:9100`
+<p align="center">
+    <img src="assets\akseswebnodeexporter.jpg" />
+</p>
 
 ### Install Prometheus
 1. Download prometheus terlebih dahulu. untuk versi lebih lengkapnya bisa dilihat diwebsite prometheus.io
@@ -118,6 +125,9 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9090', <alamat IP server yang dipantau>]
 ```
+<p align="center">
+    <img src="assets\prometheusconnect.jpg" />
+</p>
 
 6. Buat user prometheus
 ```
@@ -129,6 +139,17 @@ sudo useradd -rs /bin/false prometheus
 sudo chown prometheus:prometheus /etc/prometheus
 sudo chown prometheus:prometheus /var/lib/prometheus
 ```
+<p align="center">
+    <img src="assets\prometheuswebakes.jpg" />
+</p>
+
+<p align="center">
+    <img src="assets\createjob1.1.jpg" />
+</p>
+
+<p align="center">
+    <img src="assets\prometheustargetsweb.jpg" />
+</p>
 
 ### Install Grafana
 1. `sudo apt-get install -y apt-transport-https`
@@ -140,6 +161,10 @@ sudo chown prometheus:prometheus /var/lib/prometheus
 7. `sudo systemctl daemon-reload`
 8. `sudo systemctl start grafana-server`
 9. `sudo systemctl status grafana-server`
+<p align="center">
+    <img src="assets\statusgrafana.jpg" />
+</p>
+
 10. `sudo systemctl enable grafana-server.service`
 11. Setelah proses instalasi selesai, untuk mengamankan grafana agar tidak setiap orang bisa masuk dapat menggunakan perintah
 ```
@@ -154,5 +179,19 @@ allow_sign_up = false
 # disable anonymous access
 enabled = false
 ```
+<p align="center">
+    <img src="assets\settinggrafana.jpg" />
+</p>
+<p align="center">
+    <img src="assets\settinggrafana1.jpg" />
+</p>
+
 12. jika sudah restart grafana `sudo systemctl restart grafana-server`
 13. akses di web browser, `<alamatIP>:3000` akan muncul tampilan pertamakali grafana dan masukkan `admin/pass:admin` untuk masuk pertama kali
+<p align="center">
+    <img src="assets\webgrafana.jpg" />
+</p>
+
+<p align="center">
+    <img src="assets\aksesgrafanareverse.jpg" />
+</p>

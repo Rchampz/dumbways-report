@@ -26,6 +26,9 @@ sudo apt install ansible
 ```
 sudo ansible all --key-file multipass.pem -i hosts -m ping
 ```
+<p align="center">
+    <img src="assets\ansibleping0.jpg" />
+</p>
 
 ## Setup ansible.cfg
 1. buat file ansible.cfg dengan `nano ansible.cfg`
@@ -39,8 +42,15 @@ private_key_file = multipass.pem #ssh-key guna akses server
 ```
 sudo ansible all -y -m ping
 ```
+<p align="center">
+    <img src="assets\ansibleping1.jpg" />
+</p>
 
 ## Ansible-playbook
+<p align="center">
+    <img src="assets\serverlist.jpg" />
+</p>
+
 1. Buat file `main.yml` untuk update dan upgrade sistem 
 `sudo nano main.yml`
 isi dari file 
@@ -54,6 +64,9 @@ isi dari file
       upgrade: dist
 ```
 Jalankan dengan perintah `sudo ansible-playbook main.yml`
+<p align="center">
+    <img src="assets\ansibleupdate.jpg" />
+</p>
 
 2. Buat file setup-database.yml
 ```
@@ -66,6 +79,9 @@ Jalankan dengan perintah `sudo ansible-playbook main.yml`
       state: present
 ```
 Jalankan dengan perintah `sudo ansible-playbook setup-database.yml`
+<p align="center">
+    <img src="assets\ansibledatabase.jpg" />
+</p>
 
 3. Buat file setup-docker.yml
 ```
@@ -114,6 +130,9 @@ Jalankan dengan perintah `sudo ansible-playbook setup-database.yml`
         executable: /bin/bash
 ```
 Jalankan dengan perintah `sudo ansible-playbook setup-docker.yml`
+<p align="center">
+    <img src="assets\ansibledocker.jpg" />
+</p>
 
 4. Setup-monitoring
 
@@ -155,6 +174,9 @@ services:
         cmd: "docker-compose -f node_exporter-compose.yml up -d"
 ```
 Jalankan dengan perintah `sudo ansible-playbook setup-node_exporter.yml`
+<p align="center">
+    <img src="assets\ansiblenodeexporter.jpg" />
+</p>
 
 - Kemudian install prometheus dan grafana hanya untuk server monitoring. 
 buat file konfigurasi `prometheus.yml` dalam direktory files 
@@ -237,6 +259,9 @@ prometheus-grafana-compose.yml
       args:
         executable: /bin/bash   
 ```
+<p align="center">
+    <img src="assets\ansiblegrafana.jpg" />
+</p>
 
 5. Setup-Jenkins
 
@@ -277,6 +302,9 @@ setup-jenkins.yml
       args:
         executable: /bin/bash 
 ```
+<p align="center">
+    <img src="assets\ansiblejenkins.jpg" />
+</p>
 
 6. Setup-Apps
 - Buat file docker-compose untuk apps `docker-compose-apps.yml` dalam  direktory `files` 
@@ -325,3 +353,6 @@ setup-apps.yml
         executable: /bin/bash
 ```
 - Jalankan dengan perintah `sudo ansible-playbook setup-apps.yml`
+<p align="center">
+    <img src="assets\ansibleapp.jpg" />
+</p>
