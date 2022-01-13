@@ -14,61 +14,79 @@
 - Reverse proxy the backend -> https://api.name.onlinecamp.id
 
 ## Answer
-1. use branch production
-- git clone aplikasi menggunakan ssh
+1. Membuat docker-compose untuk aplikasi
 ```
-git clone git@github.com:rifaicham/housy-backend.git
-git clone git@github.com:rifaicham/housy-frontend.git
-```
-- Pull aplikasi dari branch production
-```
-cd housy-frontend
-git pull origin production
+nano docker-compose-app.yml
 ---
-cd housy-backend
-git pull origin production
-```
-2. Build images docker untuk aplikasi 
-```
-cd housy-frontend
-sudo docker build -t rifaicham/housy-frontend .
-cd housy-backend
-sudo docker build -t rifaicham/housy-backend .
-```
-Jika sudah dapat dicek melalui `sudo docker images`
-
-3. Deploy aplikasi menggunakan docker container
-- buat file docker-compose
-```
 version: '3'
 
 services:
 
  frontend1:
   container_name: frontend1
-  image: rifaicham/housy-frontend
+  build: ./housy-frontend
   stdin_open: true
   ports:
    - 1001:3000
  frontend2:
   container_name: frontend2
-  image: rifaicham/housy-frontend
+  build: ./housy-frontend
   stdin_open: true
   ports:
    - 1002:3000
 
  backend1:
   container_name: backend1
-  image: rifaicham/housy-backend
+  build: ./housy-backend
   stdin_open: false
   ports:
    - 1003:5000
  backend2:
   container_name: backend2
-  image: rifaicham/housy-backend
+  build: ./housy-backend
   stdin_open: false
   ports:
    - 1004:5000
 ```
-Alasan mengapa dideploy 2 adalah untuk load-balance
+
+2. Membuat ansible-playbook untuk setup aplikasi
+```
+nano setup-app.yml
+---
+- name: Setup-Aplikasi-Frontend-Backend
+  hosts: app
+  become: true
+  tasks:
+    - name: Copy docker compose
+      copy:
+        src: docker-compose-app.yml
+        dest: /home/ubuntu/
+    - name: clone housy-frontend development branch
+      ansible.builtin.git:
+        repo: https://github.com/rifaicham/housy-frontend.git
+        dest: /home/ubuntu/housy-frontend
+        single_branch: yes
+        version: production
+    - name: clone housy-backend development branch
+      ansible.builtin.git:
+        repo: https://github.com/rifaicham/housy-backend.git
+        dest: /home/ubuntu/housy-backend
+        single_branch: yes
+        version: production
+    - name: Run docker compose
+      shell: "docker-compose -f docker-compose-app.yml up -d"
+      args:
+        executable: /bin/bash
+```
+Jalankan dengan perintah `sudo ansible-playbook setup-app.yml`
+
+3. Menghubungkan frontend-backend-database
+- frontend-backend
+mengubah konfigurasi pada file src/config/api.js
+- backend-database
+mengubah konfigurasi pada file config/config.json
+
+4. Reverse proxy
+- frontend
+- backend
 

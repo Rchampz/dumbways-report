@@ -1,0 +1,102 @@
+- name: update dan upgrade server
+  hosts: all
+  become: true
+  tasks:
+  - name: update dan upgrade
+    apt:
+      update_cache: yes
+      upgrade: dist
+    tags: update-upgrade
+
+- name: Setup Docker & Docker Compose
+  hosts: all
+  become: true
+  tasks:
+    - name: Setup repository
+      shell: "sudo apt-get install ca-certificates curl gnupg lsb-release"
+      args:
+        executable: /bin/bash
+
+    - name: Add docker GPG key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Add docker repository
+      apt_repository:
+        repo: deb https://download.docker.com/linux/ubuntu focal stable
+        state: present
+
+    - name: Update system
+      apt:
+        update_cache: yes
+
+    - name: Install docker engine
+      apt:
+        name: "{{item}}"
+        state: latest
+        update_cache: yes
+      loop:
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+
+    - name: Install stable release docker compose
+      shell: sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+      args:
+        executable: /bin/bash
+
+    - name: Apply executable permission to the binary
+      shell: "sudo chmod +x /usr/local/bin/docker-compose"
+      args:
+        executable: /bin/bash
+  tags: setup-docker
+
+- name: Setup Nginx
+  hosts: gateaway
+  become: true
+  tasks:
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Copying frontend.conf
+      copy:
+        src: frontend.conf
+        dest: /etc/nginx/conf.d
+
+    - name: Copying backend.conf
+      copy:
+        src: backend.conf
+        dest: /etc/nginx/conf.d
+
+
+    - name: Copying database.conf
+      copy:
+        src: database.conf
+        dest: /etc/nginx/conf.d
+
+    - name: Copying monitoring.conf
+      copy:
+        src: monitoring.conf
+        dest: /etc/nginx/conf.d
+
+    - name: Copying prometheus.conf
+      copy:
+        src: prometheus.conf
+        dest: /etc/nginx/conf.d
+
+    - name: Copying jenkins.conf
+      copy:
+        src: jenkins.conf
+        dest: /etc/nginx/conf.d
+
+    - name: Restart nginx
+      shell:
+        cmd: "systemctl restart nginx"
+  tags: Setup-gateaway
+
+

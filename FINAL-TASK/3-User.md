@@ -62,14 +62,14 @@ nano setup-user.yml
         group: fai
         mode: 700
 
-    - name: Copy authorized_key
+    - name: Copy authorized_keys
       copy: 
-        src: files/authorized_key
+        src: files/authorized_keys
         dest: /home/{{username}}/.ssh/
 
-    - name: Change owner authorized_key
+    - name: Change owner authorized_keys
       file: 
-        path: /home/{{username}}/.ssh/authorized_key
+        path: /home/{{username}}/.ssh/authorized_keys
         owner: {{username}}
         group: {{username}}
         mode: 600

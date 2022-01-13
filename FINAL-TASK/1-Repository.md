@@ -17,7 +17,7 @@
 
 ### 2. Kemudian hubungkan server dengan git dan lakukan push
 - `git config --global user.email "rifaichamzah@gmail.com"`
-- `config --global user.name "rifaicham"`
+- `git config --global user.name "rifaicham"`
 - Buat SSH key baru dengan generate melaluui perintah `ssh-keygen` kemudian copy isi isi file `id_rsa.pub` kedalam ssh github 
 - `git remote add origin git@github.com:rifaicham/housy-frontend.git` jalankan perintah didalam folder aplikasi
 - kemudian push dengan perintah `git push -u origin main`

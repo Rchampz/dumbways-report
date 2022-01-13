@@ -18,7 +18,41 @@ multipass launch -c 1 -m 1G -d 10G --name <nama server>
 dan setelah dibuat semuanya dpat dicek menggunakan perintah `multipass ls`
 
 ### 2. Load Balance
+untuk konfigurasi load balance disini menggunakan nginx type least connection, yang di isikan dalam file frontend.conf dan backend.conf
+```
+frontend.conf
+---
+upstream lb-frontend{
+       least_conn;
+       server 172.19.156.209:1001;
+       server 172.19.156.209:1002;
+}
 
+server {
+      server_name housy.rifai.xyz;
+
+      location / {
+         proxy_pass http://lb-frontend;
+      }
+}
+```
+```
+backend.conf
+---
+upstream lb-backend{
+       least_conn;
+       server 172.19.156.209:1003;
+       server 172.19.156.209:1004;
+}
+
+server {
+      server_name api.housy.rifai.xyz;
+
+      location / {
+         proxy_pass http://lb-backend;
+      }
+}
+```
 
 ### Docker in all server
 - Buat file setup-docker-all.yml

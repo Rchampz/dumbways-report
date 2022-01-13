@@ -11,30 +11,19 @@
 - Alternative to convert MySQL database to PostgreSQL : https://pgloader.io
 
 ## Answer
-### 1. Membuat file docker-compose untuk instalasi postgress
+### Membuat file docker-compose untuk instalasi postgress
 ```
 nano docker-compose-database.yml
 ---
 version: '3'
 services:
-  mysql:
-    image: mysql:5.7
-    container_name: mysql-database
-    environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=housy
-      - MYSQL_ROOT_HOST=%
-    ports:
-      - 3306:3306
-    volumes:
-      - /home/ubuntu/mysql/data:/var/lib/mysql
-
   postgresql:
     image: postgres:latest
     container_name: pgsql-database
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
+      POSTGRES_DB: housy
     ports:
       - 5432:5432
     volumes:
@@ -59,9 +48,6 @@ nano setup-database.yml
 ```
 Jalankan dengan perintah `sudo ansible-playbook setup-database.yml`
 
-- Cek didalam server host
-    - `sudo docker ps` untuk melihat apakah container database berjalan
-    - `sudo docker exec -t mysql-database bash` kemudian akses mysql dengan `mysql -u root -p`. jika sudah masuk jalankan perintah `show databases` maka akan muncul database housy yg sudah dicreate dalam docker-compose.
-    - kemudian cek apakah sudah ada volume yg dibuat
-
+## Akses database dari server lain 
+mengakses database postgresql yang sudah di install dengan perintah `psql -U root -h <alamtIPdatabase> -p 5432`. Namun jika muncul error `psql not found` intall terlebih dahulu dengan perintah `sudo apt-get install postgresql-client` jika sudah akses kembali 
 
