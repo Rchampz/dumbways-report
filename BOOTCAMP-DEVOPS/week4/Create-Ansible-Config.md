@@ -136,7 +136,7 @@ Jalankan dengan perintah `sudo ansible-playbook setup-docker.yml`
 
 4. Setup-monitoring
 
-- buat direktpry `files` untuk menyimpan semua file yang dicopy ke server host
+- buat direktory `files` untuk menyimpan semua file yang dicopy ke server host
 - Buat file node_exporter-compose.yml dan jalankan untuk semua server
 ```
 version: '3'

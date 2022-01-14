@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+
+ frontend1:
+  container_name: frontend1
+  build: ./housy-frontend
+  stdin_open: true
+  ports:
+   - 1001:3000
+
+ backend1:
+  container_name: backend1
+  build: ./housy-backend
+  stdin_open: false
+  ports:
+   - 1003:5000
+  environment:
+    SEQ_DB: housy
+    SEQ_USER: root
+    SEQ_PW: root
+    PORT: 5000
+    DATABASE_URL: postgres://root:root@172.28.14.192:5432/housy

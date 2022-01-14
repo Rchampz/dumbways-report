@@ -14,11 +14,19 @@
 - Reverse proxy the backend -> https://api.name.onlinecamp.id
 
 ## Answer
+0. Install ansible
+```
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+```
+
 1. Membuat docker-compose untuk aplikasi
 ```
 nano docker-compose-app.yml
 ---
-version: '3'
+version: '3.9'
 
 services:
 
@@ -28,12 +36,6 @@ services:
   stdin_open: true
   ports:
    - 1001:3000
- frontend2:
-  container_name: frontend2
-  build: ./housy-frontend
-  stdin_open: true
-  ports:
-   - 1002:3000
 
  backend1:
   container_name: backend1
@@ -41,12 +43,7 @@ services:
   stdin_open: false
   ports:
    - 1003:5000
- backend2:
-  container_name: backend2
-  build: ./housy-backend
-  stdin_open: false
-  ports:
-   - 1004:5000
+
 ```
 
 2. Membuat ansible-playbook untuk setup aplikasi
@@ -61,13 +58,13 @@ nano setup-app.yml
       copy:
         src: docker-compose-app.yml
         dest: /home/ubuntu/
-    - name: clone housy-frontend development branch
+    - name: clone housy-frontend production branch
       ansible.builtin.git:
         repo: https://github.com/rifaicham/housy-frontend.git
         dest: /home/ubuntu/housy-frontend
         single_branch: yes
         version: production
-    - name: clone housy-backend development branch
+    - name: clone housy-backend production branch
       ansible.builtin.git:
         repo: https://github.com/rifaicham/housy-backend.git
         dest: /home/ubuntu/housy-backend
@@ -85,8 +82,9 @@ Jalankan dengan perintah `sudo ansible-playbook setup-app.yml`
 mengubah konfigurasi pada file src/config/api.js
 - backend-database
 mengubah konfigurasi pada file config/config.json
+- Jika sudah terhubung dapat dicoba melalui signup housy via web browser. maka akan muncul tampilan seperti berikut
 
-4. Reverse proxy
+1. Reverse proxy
 - frontend
 - backend
 

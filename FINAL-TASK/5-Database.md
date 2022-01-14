@@ -51,3 +51,16 @@ Jalankan dengan perintah `sudo ansible-playbook setup-database.yml`
 ## Akses database dari server lain 
 mengakses database postgresql yang sudah di install dengan perintah `psql -U root -h <alamtIPdatabase> -p 5432`. Namun jika muncul error `psql not found` intall terlebih dahulu dengan perintah `sudo apt-get install postgresql-client` jika sudah akses kembali 
 
+## Membuat Databases housy
+- Akses menggunanakan perintah
+  `psql -U root -h localhost --list | tail -n +4 | head -n -3 | awk '!/template[0-9]/' | awk '{print $1}' | head -n -1` untuk melihat database apasaja yang terdapat dalam psql
+- Kemudian `psql -U root -d housy -h localhost -p 5432` untuk masuk kedatabase
+- dan perintah `\l` digunakan untuk melihat list database
+
+## Create table with sequelize
+- Hubungkan ke server backend terlebih dahulu
+- Kemudian buka shell dari container backend dengan perintah `sudo docker exec -it backend1 /bin/sh`
+- Jalankan sequelize db:migrate, dan proses migrasi akan berjalan 
+- Cek kembali kedalam server database menggunakan `psql -U root -d housy -h localhost -p 5432`
+- dan perintah `\dt` untuk menampilkan table yg baru di migrasi
+
