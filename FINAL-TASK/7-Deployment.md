@@ -84,7 +84,6 @@ mengubah konfigurasi pada file src/config/api.js
 mengubah konfigurasi pada file config/config.json
 - Jika sudah terhubung dapat dicoba melalui signup housy via web browser. maka akan muncul tampilan seperti berikut
 
-1. Reverse proxy
+4. Reverse proxy
 - frontend
 - backend
-
