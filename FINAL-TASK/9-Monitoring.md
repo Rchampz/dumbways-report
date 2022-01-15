@@ -1,5 +1,9 @@
+# Monitoring
+
+## Node Exporter
+
 - buat direktory `files` untuk menyimpan semua file yang dicopy ke server host
-- Buat file node_exporter-compose.yml dan jalankan untuk semua server
+- Buat file `docker-compose-node_exporter.yml` dan jalankan untuk semua server
 ```
 version: '3'
 
@@ -28,20 +32,21 @@ services:
   tasks:
     - name: Copying docker compose file
       copy:
-        src: node_exporter-compose.yml
+        src: files/monitoring/docker-compose-node_exporter.yml
         dest: /home/ubuntu/
 
     - name: Run docker compose
       shell:
-        cmd: "docker-compose -f node_exporter-compose.yml up -d"
+        cmd: "docker-compose -f docker-compose-node_exporter.yml up -d"
 ```
 Jalankan dengan perintah `sudo ansible-playbook setup-node_exporter.yml`
-<p align="center">
-    <img src="assets\ansiblenodeexporter.jpg" />
-</p>
+
+
+## Prometheus dan Grafana
 
 - Kemudian install prometheus dan grafana hanya untuk server monitoring. 
-buat file konfigurasi `prometheus.yml` dalam direktory files 
+buat file konfigurasi `prometheus.yml` dan `web.yml` dalam direktory files.
+
 ```
 prometheus.yml
 ---
@@ -60,24 +65,30 @@ scrape_configs:
       insecure_skip_verify: true
     static_configs:
       - targets: ['172.19.147.152:9100','172.19.158.16:9100']
+```
+```
+web.yml
+basic_auth_users:
+  admin: admin
+```
+- Setelah itu buat docker-compose untuk prometheus dan grafana didalam direktory `files` `nano docker-compose-monitoring.yml`
  ```
-
-Setelah itu buat docker-compose untuk prometheus dan grafana didalam direktory `files` `nano prometheus-grafana-compose.yml`
- ```
- prometheus-grafana-compose.yml
+docker-compose-monitoring.yml
  ---
 version: '3'
 services:
   prometheus:
     image: prom/prometheus:latest
     container_name: prometheus
-    restart: unless-stopped
+    restart: unless-stopped   
     volumes:
       - /home/ubuntu/prometheus.yml:/etc/prometheus/prometheus.yml
+      - /home/ubuntu/web.yml:/etc/prometheus/web.yml
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--web.config.file=web.yml'
       - '--storage.tsdb.path=/prometheus'
-      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'   
       - '--web.console.templates=/etc/prometheus/consoles'
       - '--web.enable-lifecycle'
     ports:
@@ -94,30 +105,42 @@ services:
     restart: unless-stopped
 ```
 
-kemudian buat file ansible-playbook untuk instalasi prometheus-grafana `nano setup-prometheus-grafana.yml`
+kemudian buat file ansible-playbook untuk instalasi prometheus-grafana `nano setup-monitoring.yml`
 ```
-prometheus-grafana-compose.yml
+setup-monitoring.yml
   ---
-- name: Installing Prometheus & Grafana
+- name: Setup monitoring
   hosts: monitoring
   become: true
   tasks:
-    - name: Copying docker compose file
+    - name: Copying docker compose monitoring file
       copy:
-        src: prometheus-grafana-compose.yml
+        src: setup-monitoring.yml
         dest: /home/ubuntu/
 
     - name: Copying prometheus.yml file
       copy:
-        src: files/prometheus.yml
+        src: files/monitoring/prometheus.yml
+        dest: /home/ubuntu/
+    
+    - name: Copying web.yml file
+      copy:
+        src: files/monitoring/web.yml
         dest: /home/ubuntu/
 
     - name: Run compose up 
       shell:
-        cmd: "docker-compose -f prometheus-grafana-compose.yml up -d"
+        cmd: "docker-compose -f setup-monitoring.yml up -d"
 
     - name: Change grafana folder permission
       shell: "sudo chown 1000:1000 grafana/data/"
       args:
         executable: /bin/bash   
 ```
+
+### Grafana
+1. Membuat password baru
+  - akses grafana melalui web browser dan akan muncul tampilan awal grafana
+  - masukkan admin:admin
+  - dan ubah password untuk akses grafana kembali 
+2. 
