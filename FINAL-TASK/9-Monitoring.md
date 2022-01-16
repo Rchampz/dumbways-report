@@ -143,4 +143,19 @@ setup-monitoring.yml
   - akses grafana melalui web browser dan akan muncul tampilan awal grafana
   - masukkan admin:admin
   - dan ubah password untuk akses grafana kembali 
-2. 
+<p align="center">
+    <img src="assets\grafana1.jpg" />
+</p>
+<p align="center">
+    <img src="assets\grafana2.jpg" />
+</p>
+
+2. Buat Data source dan pilih prometheus
+<p align="center">
+    <img src="assets\datasourceprometheus.jpg" />
+</p>
+
+3. buat dashboard dengan import dari dashboard yang tersedia dalam grafana.com
+<p align="center">
+    <img src="assets\grafanadashboard.jpg" />
+</p>
