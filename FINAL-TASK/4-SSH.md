@@ -8,7 +8,7 @@
     <img src="assets\ansiblessh.jpg" />
 </p>
 <p align="center">
-    <img src="assets\loginserverssh1.jpg" />
+    <img src="assets\loginserver1.jpg" />
 </p>
 
 ### Generate SSH untuk masuk kedalam GIT
