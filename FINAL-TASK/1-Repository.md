@@ -53,7 +53,7 @@ housy-frontend dengan perintah `git clone https://github.com/sgnd/housy-frontend
 - Buat file untuk simulasi ada penambahan fitur, kemudian tambahkan ke git dengan `git add *` dan kemudian commit dengan `git commit -m "update ke development"` dan jalankan perintah `git merge development production` yang menunjukkan proses migrasi dari production ke development
 - lakukan git push dengan perintah `git push -u origin development` dan dapat dilihat dari web browser ada tejadi perubahan 
 <p align="center">
-    <img src="assets\gitconnect-push.jpg" />
+    <img src="assets\gitconnect-pushproof.jpg" />
 </p>
 
 ### 5. Git merge
