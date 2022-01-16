@@ -42,7 +42,7 @@ osts -m ping`
 nano setup-user-vars.yml
 ---
 username: fai
-password:
+password: password
 ```
 
 - membuat file ansible-playbook
