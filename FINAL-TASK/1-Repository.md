@@ -26,6 +26,7 @@ housy-frontend dengan perintah `git clone https://github.com/sgnd/housy-frontend
 <p align="center">
     <img src=assets\gitconnect1-addssh.jpg />
 </p>
+
 - Cek koneksi ke github dengan `ssh -T git@github.com`
 - `git remote add origin git@github.com:rifaicham/housy-frontend.git` jalankan perintah didalam folder aplikasi
 - kemudian push dengan perintah `git push -u origin main`
