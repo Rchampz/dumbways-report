@@ -46,6 +46,8 @@ setup-jenkins.yml
 - buka jenkins dari web browser dan paste intialpassword yg sudah dicopy sebelumnya
 - Kemudian install pluggin dan tunggu sampai selesai
 
+## Connect jenkins with server app
+
 ## Create a job (build by push github)
  ### Frontend
  1. Pilih option `manage jenkins` dan pilih `manage plugins`

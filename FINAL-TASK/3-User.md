@@ -30,6 +30,21 @@ sudo nano hosts
 - Cek koneksi antara ansible dengan server dengan perintah `sudo ansible all --key-file ssh.pem -i h
 osts -m ping`
 
+- Generate password
+  Install terlebih dahulu pip python dengan `sudo apt install python3-pip` kemudian passlib package `pip install passlib`. dan generate password dengan 
+  ```
+  python3 -c "from passlib.hash import sha512_crys.geppt; import getpass; print(sha512_crypt.using(rounds=5000).hash(getpass.getpass()))"
+  ```
+  maka akan muncul seperti ini. dan copy password yang digenerate
+
+- buat variabel ansible yang berisi username dan password yg telah dicopy sebelumnya
+```
+nano setup-user-vars.yml
+---
+username: fai
+password: $6$twwJtolO7GdBy0ZN$lDQ.6XB1VSZTuASpf2thGSOoLUMAXMgB9i1BEbgNw2/sKC8/nvCjGYz3YVQXjeSsHsv5kpre9A3fegD5DzXDp0
+```
+
 - membuat file ansible-playbook
 ```
 nano setup-user.yml
@@ -38,7 +53,7 @@ nano setup-user.yml
   hosts: all
   become: true
   vars_files:
-    - vars/create_user_vars.yml
+    - vars/setup-user-vars.yml
   tasks:
 
     - name: Create new user
@@ -49,30 +64,25 @@ nano setup-user.yml
           - sudo
           - admin
         state: present
-        shell: /bin/bash
-        system: no
-        createhome: yes
-        home: /home/{{username}}
-
-    - name: Create directory .ssh
-      file:   
-        path: /home/{{username}}/.ssh
-        state: directory
-        owner: fai
-        group: fai
-        mode: 700
-
-    - name: Copy authorized_keys
-      copy: 
-        src: files/authorized_keys
-        dest: /home/{{username}}/.ssh/
-
-    - name: Change owner authorized_keys
-      file: 
-        path: /home/{{username}}/.ssh/authorized_keys
-        owner: {{username}}
-        group: {{username}}
-        mode: 600
+ 
+    - name: Add public key to authorized_keys
+      ansible.posix.authorized_key:
+        user: "{{ username }}"
+        state: present
+        key: "{{ lookup('file', '/home/ubuntu/.ssh/id_rsa.pub') }}"  
+  
+    - name: Allow specific users to log in
+      ansible.builtin.lineinfile:
+        dest: /etc/ssh/sshd_config
+        regexp: '^AllowUsers'
+        line: 'AllowUsers {{ username }}'
+        state: present
+    - name: Add {{ username }} to sudoers file
+      ansible.builtin.lineinfile:
+        path: /etc/sudoers
+        regexp: '^{{ username }}'
+        line: '{{ username }} ALL=(ALL) NOPASSWD: ALL'
+        validate: 'visudo -cf %s'
 
     - name: Enable Password Authentication
       lineinfile:
@@ -80,23 +90,12 @@ nano setup-user.yml
         search_string: 'PasswordAuthentication no'
         line: PasswordAuthentication yes
 
-    - name: Enable SSH Authentication
-      lineinfile:
-        path: /etc/ssh/sshd_config
-        search_string: '#PubkeyAuthentication yes'
-        line: PubkeyAuthentication yes
-
     - name: Restart SSH Service
       service:
         name: ssh
         state: restarted
 ```
-Kemudian buat variabel yang berisi username dan password
-```
-nano setup-user-vars.yml
----
-username: fai
-password: rifai
-```
+
 Jalankan denga perintah `sudo ansible-playbook setup-user.yml`
 
+akses menggunakanan ubuntu home melalui ssh dengan perintah `ssh fai@172.29.149.56` 

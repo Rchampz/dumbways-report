@@ -178,12 +178,6 @@
         src: backend.conf
         dest: /etc/nginx/conf.d
 
-
-    - name: Copying database.conf
-      copy:
-        src: database.conf
-        dest: /etc/nginx/conf.d
-
     - name: Copying monitoring.conf
       copy:
         src: monitoring.conf
