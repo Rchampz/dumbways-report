@@ -45,7 +45,7 @@ Jalankan dengan perintah `sudo ansible-playbook setup-node_exporter.yml`
 ## Prometheus dan Grafana
 
 - Kemudian install prometheus dan grafana hanya untuk server monitoring. 
-buat file konfigurasi `prometheus.yml` dan `web.yml` dalam direktory files.
+buat file konfigurasi `prometheus.yml` dalam direktory files.
 
 ```
 prometheus.yml
@@ -66,11 +66,7 @@ scrape_configs:
     static_configs:
       - targets: ['172.19.147.152:9100','172.19.158.16:9100']
 ```
-```
-web.yml
-basic_auth_users:
-  admin: admin
-```
+
 - Setelah itu buat docker-compose untuk prometheus dan grafana didalam direktory `files` `nano docker-compose-monitoring.yml`
  ```
 docker-compose-monitoring.yml
