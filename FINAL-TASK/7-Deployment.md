@@ -43,7 +43,13 @@ services:
   stdin_open: false
   ports:
    - 1003:5000
-
+  environment:
+    SEQ_DB: housy
+    SEQ_USER: root
+    SEQ_PW: root
+    PORT: 5000
+    DATABASE_URL: postgres://root:root@localhost/housy
+  
 ```
 
 2. Membuat ansible-playbook untuk setup aplikasi
@@ -80,10 +86,27 @@ Jalankan dengan perintah `sudo ansible-playbook setup-app.yml`
 3. Menghubungkan frontend-backend-database
 - frontend-backend
 mengubah konfigurasi pada file src/config/api.js
+<p align="center">
+    <img src="assets\frontend-backend.jpg" />
+</p>
+
 - backend-database
 mengubah konfigurasi pada file config/config.json
+<p align="center">
+    <img src="assets\backend-databse.jpg" />
+</p>
+
 - Jika sudah terhubung dapat dicoba melalui signup housy via web browser. maka akan muncul tampilan seperti berikut
+<p align="center">
+    <img src="assets\signuphousy.jpg" />
+</p>
 
 4. Reverse proxy
 - frontend
 - backend
+<p align="center">
+    <img src="assets\reversefrontend.jpg" />
+</p>
+<p align="center">
+    <img src="assets\reversebackend.jpg" />
+</p>

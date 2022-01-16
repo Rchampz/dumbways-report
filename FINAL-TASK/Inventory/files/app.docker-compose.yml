@@ -20,4 +20,4 @@ services:
     SEQ_USER: root
     SEQ_PW: root
     PORT: 5000
-    DATABASE_URL: postgres://root:root@172.28.14.192:5432/housy
+    DATABASE_URL: postgres://root:root@localhost/housy

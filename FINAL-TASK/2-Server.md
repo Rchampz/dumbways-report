@@ -16,6 +16,9 @@ Membuat beberapa server dari multipass dengan perintah
 multipass launch -c 1 -m 1G -d 10G --name <nama server>
 ```
 dan setelah dibuat semuanya dpat dicek menggunakan perintah `multipass ls`
+<p align="center">
+    <img src="assets\createserver.jpg" />
+</p>
 
 ### 2. Load Balance
 untuk konfigurasi load balance disini menggunakan nginx type least connection, yang di isikan dalam file frontend.conf dan backend.conf
@@ -53,6 +56,9 @@ server {
       }
 }
 ```
+<p align="center">
+    <img src="assets\ansibehosts.jpg" />
+</p>
 
 ### Docker in all server
 - Buat file setup-docker-all.yml
@@ -102,4 +108,3 @@ server {
 ```
 
 - Jalankan dengan perintah `sudo ansible-playbook setup-docker-all.yml`
-

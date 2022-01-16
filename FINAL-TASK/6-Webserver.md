@@ -71,3 +71,14 @@ server {
 ```
 - Jalankan dengan perintah `sudo ansible-playbook setup-gateaway.yml`
 - Jika sudah, dapat diubah /etc/hosts terlebih dahulu agar bisa diakses lokal(atau menggunakan cloudflare jika dapat diakses global). Kemudian buka web browser dan akses alamat web server yang sudah diset melalui nginx
+
+<p align="center">
+    <img src="assets\reversefrontend.jpg" />
+</p>
+<p align="center">
+    <img src="assets\reversebackend.jpg" />
+</p>
+<p align="center">
+    <img src="assets\aksesgrafanareverse.jpg" />
+</p>
+

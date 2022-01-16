@@ -31,18 +31,18 @@ sudo nano hosts
 osts -m ping`
 
 - Generate password
-  Install terlebih dahulu pip python dengan `sudo apt install python3-pip` kemudian passlib package `pip install passlib`. dan generate password dengan 
-  ```
-  python3 -c "from passlib.hash import sha512_crys.geppt; import getpass; print(sha512_crypt.using(rounds=5000).hash(getpass.getpass()))"
-  ```
+  generate password dengan mkpasswd `sudo apt install whois` kemudian `mkpasswd --method=sha-512 password`
   maka akan muncul seperti ini. dan copy password yang digenerate
+<p align="center">
+    <img src="assets\mkpasswd.jpg" />
+</p>
 
 - buat variabel ansible yang berisi username dan password yg telah dicopy sebelumnya
 ```
 nano setup-user-vars.yml
 ---
 username: fai
-password: $6$twwJtolO7GdBy0ZN$lDQ.6XB1VSZTuASpf2thGSOoLUMAXMgB9i1BEbgNw2/sKC8/nvCjGYz3YVQXjeSsHsv5kpre9A3fegD5DzXDp0
+password:
 ```
 
 - membuat file ansible-playbook
@@ -77,6 +77,7 @@ nano setup-user.yml
         regexp: '^AllowUsers'
         line: 'AllowUsers {{ username }}'
         state: present
+
     - name: Add {{ username }} to sudoers file
       ansible.builtin.lineinfile:
         path: /etc/sudoers
@@ -97,5 +98,15 @@ nano setup-user.yml
 ```
 
 Jalankan denga perintah `sudo ansible-playbook setup-user.yml`
+<p align="center">
+    <img src="assets\ansiblecreateuser.jpg" />
+</p>
 
 akses menggunakanan ubuntu home melalui ssh dengan perintah `ssh fai@172.29.149.56` 
+
+<p align="center">
+    <img src="assets\cekuser.jpg" />
+</p>
+<p align="center">
+    <img src="assets\aksesuserdariserverlain.jpg" />
+</p>
