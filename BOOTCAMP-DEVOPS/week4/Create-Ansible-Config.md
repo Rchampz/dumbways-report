@@ -37,9 +37,10 @@
    sudo ansible all --key-file multipass.pem -i hosts -m ping
    ```
    
-   <p align="center">
-    <img src="assets\ansibleping0.jpg" />
-   </p>
+<p align="center">
+ <img src="assets\ansibleping0.jpg" />
+</p>
+
 
 ## Setup ansible.cfg
 
